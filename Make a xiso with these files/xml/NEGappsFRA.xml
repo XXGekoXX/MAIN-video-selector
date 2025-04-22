@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UnleashX>
+	<Settings>
+		<MSDashBoard>C:\Xboxdash.xbe</MSDashBoard>
+		<Password MaxTries="3"></Password>
+		<Network Enable="Yes" Type="DHCP">
+			<IP>192.168.1.15</IP>
+			<Subnet>255.255.255.0</Subnet>
+			<Gateway>192.168.1.254</Gateway>
+			<DNS1>192.168.1.254</DNS1>
+			<DNS2>192.168.1.254</DNS2>
+			<AutoDetect>Yes</AutoDetect>
+		</Network>
+		<FTP Enable="Yes">
+			<User>xbox</User>
+			<Password>xbox</Password>
+			<Port>21</Port>
+			<MaxUsers>10</MaxUsers>
+			<AllowAnon>No</AllowAnon>
+			<Greeting>Benvenuto nel server FTP</Greeting>
+			<Boost>Yes</Boost>
+		</FTP>
+		<Preference>
+			<LanguageFile>G:\Apps\MAIN video selector\French.xml</LanguageFile>
+			<DVD AutoLaunch="No"/>
+			<AudioCD AutoLaunch="No"/>
+			<Data AutoLaunch="No">G:\Apps\MAIN video selector\default.xbe</Data>
+			<Games AutoLaunch="No">G:\Apps\MAIN video selector\default.xbe</Games>
+			<SNTP Synchronize="No">216.239.35.0</SNTP>
+			<UseFahrenheit>No</UseFahrenheit>
+			<FanSpeed>1.00</FanSpeed>
+			<TempThreshold>65</TempThreshold>
+			<Use24HFormat>Yes</Use24HFormat>
+			<ScreenSaver Wait="600" Type="1" EnableBGM="No">
+				<Text>MAINtenance video selector</Text>
+				<Video></Video>
+			</ScreenSaver>
+			<AutoTurnOff>0</AutoTurnOff>
+			<EnableDriveF>True</EnableDriveF>
+			<EnableDriveG>True</EnableDriveG>
+			<LEDColor>Red</LEDColor>
+			<ContextMenu AllowRecentList="No"></ContextMenu>
+			<Skin Path="Skin">MAIN_VS</Skin>
+			<LiveUpdate AutoCheck="No"></LiveUpdate>
+			<VideoSettings Use480P="Yes" Use720P="Yes" Use1080I="No" Widescreen="Yes"></VideoSettings>
+			<AutoVideoMode MultiRegion="Off" UsePAL60="No">No</AutoVideoMode>
+			<AutoSetTime>Yes</AutoSetTime>
+		</Preference>
+		<Shortcut></Shortcut>
+		<Audio>
+			<EnableSoundEffect>Yes</EnableSoundEffect>
+			<SoundVolume>65</SoundVolume>
+			<Scroll>G:\Apps\MAIN video selector\skin\music\scroll_50.wav</Scroll>
+			<Select>G:\Apps\MAIN video selector\skin\music\click_200.wav</Select>
+			<Action_Complete>G:\Apps\MAIN video selector\skin\music\scroll_50.wav</Action_Complete>
+			<Keyboard_Stroke>G:\Apps\MAIN video selector\skin\music\scroll_50.wav</Keyboard_Stroke>
+			<Back>G:\Apps\MAIN video selector\skin\music\back_200.wav</Back>
+			<Menu_Up>G:\Apps\MAIN video selector\skin\music\scroll_50.wav</Menu_Up>
+			<Menu_Down>G:\Apps\MAIN video selector\skin\music\scroll_50.wav</Menu_Down>
+			<Game_Save_Select>G:\Apps\MAIN video selector\skin\music\scroll_50.wav</Game_Save_Select>
+			<Memory_Slot>G:\Apps\MAIN video selector\skin\music\scroll_50.wav</Memory_Slot>
+			<Ambient>G:\Apps\MAIN video selector\skin\music\ambient.wav</Ambient>
+		</Audio>
+		<LED>
+			<FTPReceive>Flashing Green</FTPReceive>
+		</LED>
+	</Settings>
+	<Menu>
+		<List  Preview="G:\Apps\MAIN video selector\Video\Alien tech.xmv" Text="1. Alien tech" Sort="off" Batch="True">
+						<Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera une vidéo de démarrage uniquement \ncompatible avec les mods matériels ayant CERBIOS. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>				 
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Video\Alien tech.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>	
+					</List>
+		<List  Preview="G:\Apps\MAIN video selector\Video\Loading Profile.xmv" Text="2. Loading Profile" Sort="off" Batch="True">
+						<Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera une vidéo de démarrage uniquement \ncompatible avec les mods matériels ayant CERBIOS. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>		
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/> 
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Video\Loading Profile.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>						
+					</List>
+		<List  Preview="G:\Apps\MAIN video selector\Video\Loading System1.xmv" Text="3. Loading System1" Sort="off" Batch="True">
+						<Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera une vidéo de démarrage uniquement \ncompatible avec les mods matériels ayant CERBIOS. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/> 
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Video\Loading System1.xmv" Arg2="E:\BootAnims\Xbox\Loading System1.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>			
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>						
+					</List>
+		<List  Preview="G:\Apps\MAIN video selector\Video\Xbox booting.xmv" Text="4. Xbox Booting" Sort="off" Batch="True">
+						<Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera une vidéo de démarrage uniquement \ncompatible avec les mods matériels ayant CERBIOS. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Video\Xbox booting.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>		
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>						
+					</List>		
+		<List  Preview="G:\Apps\MAIN video selector\Video\Xbox dvd boot.xmv" Text="5. Xbox DVD Boot" Sort="off" Batch="True">
+						<Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera une vidéo de démarrage uniquement \ncompatible avec les mods matériels ayant CERBIOS. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>		
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Video\Xbox dvd boot.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>		
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>						
+					</List>			
+		<List  Preview="G:\Apps\MAIN video selector\Video\You are a.xmv" Text="6. You are a" Sort="off" Batch="True">
+						<Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera une vidéo de démarrage uniquement \ncompatible avec les mods matériels ayant CERBIOS. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>		
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Video\You are a.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>			
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>						
+					</List>							
+		<List  Preview="G:\Apps\MAIN video selector\Video\OGBoot Blue.xmv" Text="7. OGBoot Blue" Sort="off" Batch="True">
+						<Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera une vidéo de démarrage uniquement \ncompatible avec les mods matériels ayant CERBIOS. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>		
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Video\OGBoot Blue.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>						
+					</List>
+		<List  Preview="G:\Apps\MAIN video selector\Video\OGBoot Cyan.xmv" Text="8. OGBoot Cyan" Sort="off" Batch="True">
+						<Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera une vidéo de démarrage uniquement \ncompatible avec les mods matériels ayant CERBIOS. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>		
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Video\OGBoot Cyan.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>		
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>						
+					</List>
+		<List  Preview="G:\Apps\MAIN video selector\Video\OGBoot Orange.xmv" Text="9. OGBoot Orange" Sort="off" Batch="True">
+						<Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera une vidéo de démarrage uniquement \ncompatible avec les mods matériels ayant CERBIOS. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>		
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Video\OGBoot Orange.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>						
+					</List>
+		<List  Preview="G:\Apps\MAIN video selector\Video\OGBoot Red.xmv" Text="10. OGBoot Red" Sort="off" Batch="True">
+						<Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera une vidéo de démarrage uniquement \ncompatible avec les mods matériels ayant CERBIOS. \nContinuer?"/>
+                			        <Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>		
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Video\OGBoot Red.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>		
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>						
+					</List>		
+		<List  Preview="G:\Apps\MAIN video selector\Video\OGBoot Pink.xmv" Text="11. OGBoot Pink" Sort="off" Batch="True">
+						<Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera une vidéo de démarrage uniquement \ncompatible avec les mods matériels ayant CERBIOS. \nContinuer?"/>
+                			        <Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>		
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Video\OGBoot Pink.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>		
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>						
+					</List>			
+		<List  Preview="G:\Apps\MAIN video selector\Video\OGBoot Purple.xmv" Text="12. OGBoot Purple" Sort="off" Batch="True">
+						<Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera une vidéo de démarrage uniquement \ncompatible avec les mods matériels ayant CERBIOS. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>		
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Video\OGBoot Purple.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>		
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>						
+					</List>			
+		<List  Preview="G:\Apps\MAIN video selector\Video\OGBoot Green.xmv" Text="13. OGBoot Green" Sort="off" Batch="True">
+						<Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera une vidéo de démarrage uniquement \ncompatible avec les mods matériels ayant CERBIOS. \nContinuer?"/>
+                			        <Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>		
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Video\OGBoot Green.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>		
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>
+					</List>							
+		<List  Preview="G:\Apps\MAIN video selector\Video\Controller Boot Black.xmv" Text="14. Controller Boot Black" Sort="off" Batch="True">
+						<Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera une vidéo de démarrage uniquement \ncompatible avec les mods matériels ayant CERBIOS. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>		
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Video\Controller Boot Black.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>						
+					</List>			
+		<List  Preview="G:\Apps\MAIN video selector\Video\Controller Boot Green.xmv" Text="15. Controller Boot Green" Sort="off" Batch="True">
+						<Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera une vidéo de démarrage uniquement \ncompatible avec les mods matériels ayant CERBIOS. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>						 
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Video\Controller Boot Green.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>
+					</List>		
+		<List  Preview="G:\Apps\MAIN video selector\Video\Cinematic Xbox One.xmv" Text="16. Cinematic Xbox One" Sort="off" Batch="True">
+						<Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera une vidéo de démarrage uniquement \ncompatible avec les mods matériels ayant CERBIOS. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>						 
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Video\Cinematic Xbox One.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>
+					</List>						
+		<List  Preview="G:\Apps\MAIN video selector\Video\VHS Startup.xmv" Text="17. VHS Startup" Sort="off" Batch="True">
+						<Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera une vidéo de démarrage uniquement \ncompatible avec les mods matériels ayant CERBIOS. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>						 
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Video\VHS Startup.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>						
+					</List>				
+		<List  Preview="G:\Apps\MAIN video selector\Video\Xbox Series Mashup.xmv" Text="18. Xbox Series Mashup" Sort="off" Batch="True">
+						<Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera une vidéo de démarrage uniquement \ncompatible avec les mods matériels ayant CERBIOS. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>						 
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Video\Xbox Series Mashup.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>						
+					</List>			
+		<List  Preview="G:\Apps\MAIN video selector\Video\Cerbios on Fire.xmv" Text="19. Cerbios on Fire" Sort="off" Batch="True">
+						<Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera une vidéo de démarrage uniquement \ncompatible avec les mods matériels ayant CERBIOS. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>						 
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Video\Cerbios on Fire.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>						
+					</List>		
+		<List  Preview="G:\Apps\MAIN video selector\Video\Future Console Splash1.xmv" Text="20. Future Console Splash1" Sort="off" Batch="True">
+						<Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera une vidéo de démarrage uniquement \ncompatible avec les mods matériels ayant CERBIOS. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>						 
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Video\Future Console Splash1.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>						
+					</List>						
+		<List  Preview="G:\Apps\MAIN video selector\Video\Matrix trails.xmv" Text="21. Matrix trails" Sort="off" Batch="True">
+						<Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera une vidéo de démarrage uniquement \ncompatible avec les mods matériels ayant CERBIOS. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>						 
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Video\Matrix trails.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>						
+					</List>	
+		<List  Preview="G:\Apps\MAIN video selector\Video\modzvilleusa.xmv" Text="22. Modzvilleusa" Sort="off" Batch="True">
+						<Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera une vidéo de démarrage uniquement \ncompatible avec les mods matériels ayant CERBIOS. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>							 
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Video\modzvilleusa.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>						
+					</List>		
+		<List  Preview="G:\Apps\MAIN video selector\Video\Team Resurgent.xmv" Text="23. Team Resurgent" Sort="off" Batch="True">
+						<Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera une vidéo de démarrage uniquement \ncompatible avec les mods matériels ayant CERBIOS. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>						 
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Video\Team Resurgent.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>						
+					</List>				
+		<List  Preview="G:\Apps\MAIN video selector\Video\Resurgent-1.xmv" Text="24. Resurgent-1" Sort="off" Batch="True">
+						<Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera une vidéo de démarrage uniquement \ncompatible avec les mods matériels ayant CERBIOS. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>						 
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Video\Resurgent-1.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>						
+					</List>					
+		<List  Preview="G:\Apps\MAIN video selector\Video\Rustbox.xmv" Text="25. Rustbox" Sort="off" Batch="True">
+						<Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera une vidéo de démarrage uniquement \ncompatible avec les mods matériels ayant CERBIOS. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>						 
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Video\Rustbox.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>						
+					</List>	
+		<List  Preview="G:\Apps\MAIN video selector\Video\XBMC.xmv" Text="26. XBMC" Sort="off" Batch="True">
+						<Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera une vidéo de démarrage uniquement \ncompatible avec les mods matériels ayant CERBIOS. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>						 
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Video\XBMC.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>						
+					</List>		
+		<List  Preview="G:\Apps\MAIN video selector\Video\Xbox Cosmic.xmv" Text="27. Xbox Cosmic" Sort="off" Batch="True">
+						<Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera une vidéo de démarrage uniquement \ncompatible avec les mods matériels ayant CERBIOS. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>						 
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Video\Xbox Cosmic.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>						
+					</List>			
+		<List  Preview="G:\Apps\MAIN video selector\Video\Xbox JPN special.xmv" Text="28. Xbox JPN Special" Sort="off" Batch="True">
+						<Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera une vidéo de démarrage uniquement \ncompatible avec les mods matériels ayant CERBIOS. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>						 
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Video\Xbox JPN special.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>						
+					</List>		
+		<List  Preview="G:\Apps\MAIN video selector\Video\Xbox Live Attract.xmv" Text="29. Xbox Live Attract" Sort="off" Batch="True">
+						<Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera une vidéo de démarrage uniquement \ncompatible avec les mods matériels ayant CERBIOS. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>						 
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Video\Xbox Live Attract.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>						
+					</List>	
+		<List  Preview="G:\Apps\MAIN video selector\Video\Xbox scene.xmv" Text="30. Xbox Scene" Sort="off" Batch="True">
+						<Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera une vidéo de démarrage uniquement \ncompatible avec les mods matériels ayant CERBIOS. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>						 
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Video\Xbox scene.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>						
+					</List>	
+		<List  Preview="G:\Apps\MAIN video selector\Video\xbox_ident.xmv" Text="31. Xbox Ident" Sort="off" Batch="True">
+						<Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera une vidéo de démarrage uniquement \ncompatible avec les mods matériels ayant CERBIOS. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>						 
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Video\xbox_ident.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>						
+					</List>		
+		<List  Preview="G:\Apps\MAIN video selector\Video\Cerbios_Boot.xmv" Text="32. Cerbios Boot" Sort="off" Batch="True">
+						<Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera une vidéo de démarrage uniquement \ncompatible avec les mods matériels ayant CERBIOS. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>						 
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Video\Cerbios_Boot.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>						
+					</List>		
+		<List  Preview="G:\Apps\MAIN video selector\Video\bootanim.xmv" Text="33. Cerbios Video" Sort="off" Batch="True">
+						<Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera une vidéo de démarrage uniquement \ncompatible avec les mods matériels ayant CERBIOS. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>						 
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Video\bootanim.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>						
+					</List>					
+		<List  Preview="G:\Apps\MAIN video selector\Video\NoVideo.xmv" Text="34. NO Video" Sort="off" Batch="True">
+						<Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera une vidéo de démarrage uniquement \ncompatible avec les mods matériels ayant CERBIOS. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>						 
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Video\NoVideo.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>						
+					</List>				
+ <Item>EXTRA:</Item>		
+ <List  Icon="G:\Apps\MAIN video selector\Icons\CustomVideo.png" Text="-Vidéo personnalisée" Sort="Off" Auto="On">
+						<List  Preview="G:\Apps\MAIN video selector\Custom video\Video1.xmv" Text="-Video 1" Sort="Off" Batch="True">
+	      					<Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera la vidéo de démarrage téléchargée \npar l’utilisateur dans le chemin \nMAIN video selector- Custom video- Video1.xmv. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>
+						<Item Action="Rename" arg1="G:\Apps\MAIN Video selector\Custom video\Video1.xmv" arg2="G:\Apps\MAIN Video selector\Custom video\_Video1.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="G:\Apps\MAIN Video selector\Custom video\_Video1.xmv" arg2="G:\Apps\MAIN Video selector\Custom video\Video1.xmv">Vidéo non installée</Item>
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Custom video\Video1.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>
+					</List>
+							<List  Preview="G:\Apps\MAIN video selector\Custom video\Video2.xmv" Text="-Video 2" Sort="Off" Batch="True">
+	      					<Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera la vidéo de démarrage téléchargée \npar l’utilisateur dans le chemin \nMAIN video selector- Custom video- Video2.xmv. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>
+						<Item Action="Rename" arg1="G:\Apps\MAIN Video selector\Custom video\Video2.xmv" arg2="G:\Apps\MAIN Video selector\Custom video\_Video2.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="G:\Apps\MAIN Video selector\Custom video\_Video2.xmv" arg2="G:\Apps\MAIN Video selector\Custom video\Video2.xmv">Vidéo non installée</Item>	
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Custom video\Video2.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>
+					</List>
+							<List  Preview="G:\Apps\MAIN video selector\Custom video\Video3.xmv" Text="-Video 3" Sort="Off" Batch="True">
+	        <Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera la vidéo de démarrage téléchargée \npar l’utilisateur dans le chemin \nMAIN video selector- Custom video- Video3.xmv. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>
+						<Item Action="Rename" arg1="G:\Apps\MAIN Video selector\Custom video\Video3.xmv" arg2="G:\Apps\MAIN Video selector\Custom video\_Video3.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="G:\Apps\MAIN Video selector\Custom video\_Video3.xmv" arg2="G:\Apps\MAIN Video selector\Custom video\Video3.xmv">Vidéo non installée</Item>	
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Custom video\Video3.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>						
+					</List>
+							<List  Preview="G:\Apps\MAIN video selector\Custom video\Video4.xmv" Text="-Video 4" Sort="Off" Batch="True">
+	        <Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera la vidéo de démarrage téléchargée \npar l’utilisateur dans le chemin \nMAIN video selector- Custom video- Video4.xmv. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>
+						<Item Action="Rename" arg1="G:\Apps\MAIN Video selector\Custom video\Video4.xmv" arg2="G:\Apps\MAIN Video selector\Custom video\_Video4.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="G:\Apps\MAIN Video selector\Custom video\_Video4.xmv" arg2="G:\Apps\MAIN Video selector\Custom video\Video4.xmv">Vidéo non installée</Item>	
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Custom video\Video4.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>						
+					</List>
+							<List  Preview="G:\Apps\MAIN video selector\Custom video\Video5.xmv" Text="-Video 5" Sort="Off" Batch="True">
+	        <Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera la vidéo de démarrage téléchargée \npar l’utilisateur dans le chemin \nMAIN video selector- Custom video- Video5.xmv. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>
+						<Item Action="Rename" arg1="G:\Apps\MAIN Video selector\Custom video\Video5.xmv" arg2="G:\Apps\MAIN Video selector\Custom video\_Video5.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="G:\Apps\MAIN Video selector\Custom video\_Video5.xmv" arg2="G:\Apps\MAIN Video selector\Custom video\Video5.xmv">Vidéo non installée</Item>	
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Custom video\Video5.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>
+					</List>
+							<List  Preview="G:\Apps\MAIN video selector\Custom video\Video6.xmv" Text="-Video 6" Sort="Off" Batch="True">
+	        <Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera la vidéo de démarrage téléchargée \npar l’utilisateur dans le chemin \nMAIN video selector- Custom video- Video6.xmv. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>
+						<Item Action="Rename" arg1="G:\Apps\MAIN Video selector\Custom video\Video6.xmv" arg2="G:\Apps\MAIN Video selector\Custom video\_Video6.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="G:\Apps\MAIN Video selector\Custom video\_Video6.xmv" arg2="G:\Apps\MAIN Video selector\Custom video\Video6.xmv">Vidéo non installée</Item>	
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Custom video\Video6.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>
+					</List>
+							<List  Preview="G:\Apps\MAIN video selector\Custom video\Video7.xmv" Text="-Video 7" Sort="Off" Batch="True">
+	        <Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera la vidéo de démarrage téléchargée \npar l’utilisateur dans le chemin \nMAIN video selector- Custom video- Video7.xmv. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>
+						<Item Action="Rename" arg1="G:\Apps\MAIN Video selector\Custom video\Video7.xmv" arg2="G:\Apps\MAIN Video selector\Custom video\_Video7.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="G:\Apps\MAIN Video selector\Custom video\_Video7.xmv" arg2="G:\Apps\MAIN Video selector\Custom video\Video7.xmv">Vidéo non installée</Item>	
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Custom video\Video7.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>
+					</List>
+							<List  Preview="G:\Apps\MAIN video selector\Custom video\Video8.xmv" Text="-Video 8" Sort="Off" Batch="True">
+	        <Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera la vidéo de démarrage téléchargée \npar l’utilisateur dans le chemin \nMAIN video selector- Custom video- Video8.xmv. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>
+						<Item Action="Rename" arg1="G:\Apps\MAIN Video selector\Custom video\Video8.xmv" arg2="G:\Apps\MAIN Video selector\Custom video\_Video8.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="G:\Apps\MAIN Video selector\Custom video\_Video8.xmv" arg2="G:\Apps\MAIN Video selector\Custom video\Video8.xmv">Vidéo non installée</Item>	
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Custom video\Video8.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>
+					</List>
+							<List  Preview="G:\Apps\MAIN video selector\Custom video\Video9.xmv" Text="-Video 9" Sort="Off" Batch="True">
+	        <Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera la vidéo de démarrage téléchargée \npar l’utilisateur dans le chemin \nMAIN video selector- Custom video- Video9.xmv. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>
+						<Item Action="Rename" arg1="G:\Apps\MAIN Video selector\Custom video\Video9.xmv" arg2="G:\Apps\MAIN Video selector\Custom video\_Video9.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="G:\Apps\MAIN Video selector\Custom video\_Video9.xmv" arg2="G:\Apps\MAIN Video selector\Custom video\Video9.xmv">Vidéo non installée</Item>	
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Custom video\Video9.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>
+					</List>
+							<List  Preview="G:\Apps\MAIN video selector\Custom video\Video10.xmv" Text="-Video 10" Sort="Off" Batch="True">
+	        <Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela installera la vidéo de démarrage téléchargée \npar l’utilisateur dans le chemin \nMAIN video selector- Custom video- Video10.xmv. \nContinuer?"/>
+                				<Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Cette version de l’outil est destinée aux utilisateurs qui \nn’ont PAS modifié leur fichier Cerbios.ini en activant la vidéo de démarrage personnalisée. \nDois-je procéder?"/>
+						<Item Action="Rename" arg1="G:\Apps\MAIN Video selector\Custom video\Video10.xmv" arg2="G:\Apps\MAIN Video selector\Custom video\_Video10.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="G:\Apps\MAIN Video selector\Custom video\_Video10.xmv" arg2="G:\Apps\MAIN Video selector\Custom video\Video10.xmv">Vidéo non installée</Item>	
+            					<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Player\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Custom video\Video10.xmv" Arg2="C:\BootAnims\Xbox\bootanim.xmv"/>
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\bootanim.xmv" arg2="C:\BootAnims\Xbox\_bootanim.xmv">Vidéo non installée</Item>	
+						<Item Action="Rename" arg1="C:\BootAnims\Xbox\_bootanim.xmv" arg2="C:\BootAnims\Xbox\bootanim.xmv">Vidéo non installée</Item>
+						<Item Action="MessageBox" arg1="INFORMATION">Vidéo installée correctement.</Item>
+					</List>
+					</List>	
+<List  Icon="G:\Apps\MAIN video selector\Icons\Restore.png" Text="-Restaurer le dossier Xbox (animation de démarrage Cerbios)" Sort="off" Batch="True">
+						<Item Action="AskUser" Arg1="ATTENTION" Arg2="Cela restaurera le dossier contenant l’animation \nde démarrage CERBIOS. \nContinuer?"/>
+						<Item Action="copy" Arg1="G:\Apps\MAIN video selector\dummy" Arg2="C:\BootAnims\Xbox\dummy"/>	
+						<Item Action="Delete" arg="C:\BootAnims\Xbox"/>
+            			<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Flubber\BootAnim.xbe" Arg2="C:\BootAnims\Xbox\BootAnim.xbe"/>
+            			<Item Action="copy" Arg1="G:\Apps\MAIN video selector\Flubber\bootanim.ini" Arg2="C:\BootAnims\Xbox\bootanim.ini"/>
+						<Item Action="MessageBox" arg1="INFORMATION">Dossier restauré avec succès.</Item>
+						</List>	
+					<Item  Icon="G:\Apps\MAIN video selector\Icons\FileManager.png" Action="FileManager">-Gestionnaire de Fichiers</Item>
+					<Item  Icon="G:\Apps\MAIN video selector\Icons\Reboot.png" Action="PowerCycle">-Redémarrer</Item>
+					<List  Icon="G:\Apps\MAIN video selector\Icons\Shutdown.png" Text="-Éteindre et nettoyer le système." Sort="Off" Batch="True">
+						<Item Action="MessageBox" Arg1="Shutdown">La XBox sera maintenant éteinte et les partitions \ndu cache seront formatées.</Item>
+						<Item Action="Format" Arg1="X"/>
+						<Item Action="Format" Arg1="Y"/>
+						<Item Action="Format" Arg1="Z"/>
+						<Item Action="Shutdown"/>
+					</List>
+	</Menu>
+</UnleashX>

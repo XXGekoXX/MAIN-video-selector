@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Resource Name="Deutsch">
+	<!-- Global-->
+	<NONE>Keins</NONE>
+	<OK>OK</OK>
+	<CANCEL>Abbrechen</CANCEL>
+	<ABORT>Stopp</ABORT>
+	<RETRY>Wiederholen</RETRY>
+	<IGNORE>Ignorieren</IGNORE>
+	<YES>Ja</YES>
+	<NO>Nein</NO>
+	<ACCEPT>Bestätigen</ACCEPT>
+	<CHECKING>Überprüfe.</CHECKING>
+	<ERROR>Fehler</ERROR>
+	<CONFIRM>Bestätigen</CONFIRM>
+	<SUCCESS>Erfolgreich</SUCCESS>
+	<INFORMATION>Information</INFORMATION>
+	<WARNING>Warnung</WARNING>
+	<!-- File Explorer-->
+	<BROWSE_FOLDER>Verzeichnis durchsuchen</BROWSE_FOLDER>
+	<NEW_FOLDER>Neues Verzeichnis</NEW_FOLDER>
+	<CREATE_FOLDER>Verzeichnis erstellen</CREATE_FOLDER>
+	<SELECT>Auswahl</SELECT>
+	<ROOT_FOLDER>Root Verzeichnis</ROOT_FOLDER>
+	<SELECT_ALL>Alle auswählen</SELECT_ALL>
+	<CLEAR_SELECTION>Auswahl löschen</CLEAR_SELECTION>
+	<INVERSE_SELECTION>Auswahl umkehren</INVERSE_SELECTION>
+	<COPY>Kopieren...</COPY>
+	<COPY_RESUME>Kopieren/Weiter...</COPY_RESUME>
+	<MOVE>Verschieben...</MOVE>
+	<DELETE>Löschen...</DELETE>
+	<RENAME>Umbenennen...</RENAME>
+	<CALC_USED_SPACE>Belegter Speicher</CALC_USED_SPACE>
+	<COPY_DISC>Disc kopieren</COPY_DISC>
+	<QUICK_COPY_DISK>Disc kopieren (schnell)</QUICK_COPY_DISK>
+	<ADD_TO_ZIP_FILE>Zu ZIP-Archiv hinzufügen</ADD_TO_ZIP_FILE>
+	<PATCH_XBE_FILE>XBE patchen</PATCH_XBE_FILE>
+	<RENAME_XBE_TITLE>XBE Titel umbenennen</RENAME_XBE_TITLE>
+	<NEW_TEXT_DOCUMENT>Neues Textdokument</NEW_TEXT_DOCUMENT>
+	<OPEN_WITH_TEXT_EDITOR>Mit Text Editor öffnen</OPEN_WITH_TEXT_EDITOR>
+	<FORMAT_DRIVE>Laufwerk formatieren...</FORMAT_DRIVE>
+	<SWITCH_TO_FTP>Zum FTP Browser wechseln...</SWITCH_TO_FTP>
+	<!-- Messages-->
+	<MSG_FORMAT_DRIVE_ASK>Willst du wirklich Laufwerk %c:\\ formatieren?\nAlle Daten werden dabei gelöscht.</MSG_FORMAT_DRIVE_ASK>
+	<MSG_INVALID_SELECTION>Ungültige Auswahl. Bitte mindestens eine Datei zum Kopieren auswählen.</MSG_INVALID_SELECTION>
+	<MSG_INSUFFICIENTSPACE>Nicht genügend Speicherplatz.\nVerfügbarer Speicher: %s\nBenötigter Speicher: %s</MSG_INSUFFICIENTSPACE>
+	<MSG_ABOUT_TO_COPY>Es werden %s Datei(en) und %s Verzeichnis(se) insgesamt %s %s kopiert.</MSG_ABOUT_TO_COPY>
+	<MSG_COPYING>Kopiere ausgewälte Dateien...\n\nBitte die XBox NICHT ausschalten.</MSG_COPYING>
+	<MSG_COPY_SUCCESS>%s Datei(en) und %s Verzeichnis(se) wurden erfolgreich kopiert.</MSG_COPY_SUCCESS>
+	<MSG_COPY_ERROR>Während des Kopiervorgangs ist ein Fehler aufgetreten.\nFehler Code: %d</MSG_COPY_ERROR>
+	<MSG_COPY_INVALID>Quelle und Ziel dürfen nicht identisch sein.\nBitte wähle ein anderes Ziel aus.</MSG_COPY_INVALID>
+	<MSG_COPY_CHECK>Bereite Kopiervorgang vor...\n\nBitte die XBox NICHT ausschalten.\n\nÜberprüfe</MSG_COPY_CHECK>
+	<MSG_NO_DESTINATION>Ziel ist nicht verfügbar.\nBitte wähle ein anderes Ziel aus.</MSG_NO_DESTINATION>
+	<MSG_ABOUT_TO_MOVE>Es werden %s Datei(en) und %s Verzeichnis(se) insgesamt %s %s verschoben.</MSG_ABOUT_TO_MOVE>
+	<MSG_MOVING>Verschiebe ausgewählte Datei(en)...\n\nBitte die XBox NICHT ausschalten.</MSG_MOVING>
+	<MSG_MOVE_SUCCESS>%s Datei(en) und %s Verzeichnis(se) wurden erfolgreich verschoben.</MSG_MOVE_SUCCESS>
+	<MSG_MOVE_ERROR>Während des Verschiebens ist ein Fehler aufgetreten.\nFehler Code: %d</MSG_MOVE_ERROR>
+	<MSG_MOVE_CHECK>Bereite Verschieben vor...\n\nBitte die XBox NICHT ausschalten.\n\nÜberprüfe</MSG_MOVE_CHECK>
+	<MSG_ABOUT_TO_DELETE>Es werden %s Datei(en) und %s Verzeichnis(se) insgesamt %s %s gelöscht.</MSG_ABOUT_TO_DELETE>
+	<MSG_DELETING>Lösche ausgewählte Datei(en)...\n\nBitte die XBox NICHT ausschalten.</MSG_DELETING>
+	<MSG_DELETE_SUCCESS>%s Datei(en) und %s Verzeichnis(se) wurden erfolgreich gelöscht.</MSG_DELETE_SUCCESS>
+	<MSG_DELETE_ERROR>Während des Löschens ist ein Fehler aufgetreten.\nFehler Code: %d</MSG_DELETE_ERROR>
+	<MSG_DELETE_CHECK>Bereite Löschvorgang vor...\n\nBitte die XBox NICHT ausschalten.\n\nÜberprüfe</MSG_DELETE_CHECK>
+	<MSG_ZIPPING>Komprimiere ausgewählte Datei(en)...\n\nBitte die XBox NICHT ausschalten.</MSG_ZIPPING>
+	<MSG_ZIP_SUCCESS>%s Datei(en) und %s Verzeichnis(se) erfolgreich komprimiert.</MSG_ZIP_SUCCESS>
+	<MSG_ZIP_ERROR>Während des Komprimierens ist ein Fehler aufgetreten.\nFehler Code: %d</MSG_ZIP_ERROR>
+	<MSG_ZIP_CHECK>Üerprüfe Datei(en)...\n\nBitte die XBox NICHT ausschalten.\n\nÜberprüfe</MSG_ZIP_CHECK>
+	<MSG_CALC_SPACE>Durch %s Datei(en) in %s Verzeichnis(sen) belegter Speicher: %s %s</MSG_CALC_SPACE>
+	<MSG_CALC_CHECK>Berechne Speicherplatz...\n\nBitte die XBox NICHT ausschalten.\n\nÜberprüfe</MSG_CALC_CHECK>
+	<MSG_DVD_COPYING>Kopiere DVD...\n\nBitte die XBox NICHT ausschalten.</MSG_DVD_COPYING>
+	<MSG_DVD_COPY_SUCCESS>DVD erfolgreich kopiert.</MSG_DVD_COPY_SUCCESS>
+	<MSG_XBEPATCH_SOURCE_ERR>Es können nur sich auf den Festplatten befindene Dateien gepatched werden.</MSG_XBEPATCH_SOURCE_ERR>
+	<MSG_XBEPATCH_ERROR>Patchen der XBE nicht möglich. Vielleicht schon gepatched oder Patch wird nicht benötigt.</MSG_XBEPATCH_ERROR>
+	<MSG_XBEPATCH_SUCCESS>XBE erfolgreich gepatched.</MSG_XBEPATCH_SUCCESS>
+	<MSG_XBERENAME_SUCCESS>XBE Titel erfolgreich umbenannt.</MSG_XBERENAME_SUCCESS>
+	<MSG_XBERENAME_ERROR>Umbenennen des XBE Titels nicht möglich.</MSG_XBERENAME_ERROR>
+	<MSG_RENAME_ERROR>Während des Umbenennens ist ein Fehler aufgetreten.\nFehler Code: %d</MSG_RENAME_ERROR>
+	<MSG_CREATEFOLDER_ERROR>Beim Erstellen des neuen Verzeichnisses ist ein Fehler aufgetreten.\nFehler Code: %d</MSG_CREATEFOLDER_ERROR>
+	<!-- Game Saves -->
+	<MSG_GAMESAVES_CAPTION>Save Games</MSG_GAMESAVES_CAPTION>
+	<MSG_GAMESAVES_SEARCH>Suche nach Save Games.\nBitte warten...</MSG_GAMESAVES_SEARCH>
+	<MSG_GAMESAVES_DELETE_ERROR>Beim Löschen von '%s' ist ei Fehler aufgetreten.\nFehler Code: %d</MSG_GAMESAVES_DELETE_ERROR>
+	<MSG_GAMESAVES_DELETE_SUCCESS>'%s' wurde erfolgreich gelöscht.</MSG_GAMESAVES_DELETE_SUCCESS>
+	<MSG_GAMESAVES_CONTENT>Mit diesem Modul können keine XBL-Inhalte kopiert werden.\nBitte den Filemanager zum Kopieren von:\n'%s' benutzen.</MSG_GAMESAVES_CONTENT>
+	<MSG_GAMESAVES_NO_DEST>Ziel ist voll oder existiert nicht.</MSG_GAMESAVES_NO_DEST>
+	<MSG_GAMESSAVES_BAD_DEST>Nicht genügend Speicherplatz auf dem Ziellaufwerk.</MSG_GAMESSAVES_BAD_DEST>
+	<MSG_GAMESAVES_INSERT_MU>Bitte eine MemoryCard einstecken.</MSG_GAMESAVES_INSERT_MU>
+	<MSG_GAMESAVES_DELETE>Es werden die folgenden Save Games gelöscht:\n%s\nNr. von Blöcken: %u\nBeinhaltet %u Speicherstände und %u Inhalte\nWillst du wirklich löschen?</MSG_GAMESAVES_DELETE>
+	<MSG_GAMESAVES_DELETE_ITEM>Es werden die folgenden Save Games gelöscht:\n%s\nNr. von Blöcken: %u\nWillst du wirklich löschen?</MSG_GAMESAVES_DELETE_ITEM>
+	<MSG_GAMESAVES_COPY_ERROR>Beim Kopieren von '%s' ist ein Fehler aufgetreten.\nFehler Code: %d</MSG_GAMESAVES_COPY_ERROR>
+	<MSG_GAMESAVES_NO_SAVES>Konnte für '%s' keine Save Games finden.</MSG_GAMESAVES_NO_SAVES>
+	<GAMESAVES_DOWNLOAD>Download von Game Saves</GAMESAVES_DOWNLOAD>
+	<GAMESAVES_RELOAD>Game Saves neu laden</GAMESAVES_RELOAD>
+	<GAMESAVES_INVALID_FORMAT>Geladene Datei liegt nicht im richtigen Format vor.</GAMESAVES_INVALID_FORMAT>
+	<!-- Network/http -->
+	<HTTP_ERROR>HTTP Fehler</HTTP_ERROR>
+	<HTTP_OPENING>Öffne...</HTTP_OPENING>
+	<HTTP_CONNECTING>Verbinde...</HTTP_CONNECTING>
+	<HTTP_CONNECTED>Verbunden.</HTTP_CONNECTED>
+	<HTTP_RETRIEVING>Empfange</HTTP_RETRIEVING>
+	<HTTP_FINISHED>Fertig.</HTTP_FINISHED>
+	<MSG_HTTP_FETCH_ERROR>Kann Datei nicht abrufen: HTTP STATUS %d</MSG_HTTP_FETCH_ERROR>
+	<MSG_INVALID_FILE_FORMAT>Die Datei '%s' ist keine gültige '%s' Datei.</MSG_INVALID_FILE_FORMAT>
+	<MSG_MENU_BATCH_ERROR>Batchprozess fehlgeschlagen.\nDas letzte Objekt war: %s.\nAktion: %s</MSG_MENU_BATCH_ERROR>
+	<MSG_MENU_DELETE_GAME>Folgender Titel wird von der Festplatte gelöscht?\nXbox Titel:\t%s\nWillst du wirklich löschen?</MSG_MENU_DELETE_GAME>
+	<MSG_MENU_FORMAT_SUCCESS>Formatieren von Laufwerk %s abgeschlossen</MSG_MENU_FORMAT_SUCCESS>
+	<MSG_MENU_FORMAT_ERROR>Formatieren von Laufwerk %s fehlgeschlagen</MSG_MENU_FORMAT_ERROR>
+	<MSG_MENU_SEARCH>Suche nach Xbox Titeln.\nBitte warten...</MSG_MENU_SEARCH>
+	<MSG_TEXTEDITOR_SAVE_ERROR>Beim Speichern von '%s' ist ein Fehler aufgetreten.\nFehler Code: %d</MSG_TEXTEDITOR_SAVE_ERROR>
+	<MSG_TEXTEDITOR_OPEN_ERROR>Beim Versuch '%s' zu öffnen ist ein Fehler aufgetreten.\nFehler Code: %d</MSG_TEXTEDITOR_OPEN_ERROR>
+	<MSG_TEXTEDITOR_SAVE_ASK>Das Dokument wurde ver㭤ert.\nSollen die Änderungen gespeichert werden?</MSG_TEXTEDITOR_SAVE_ASK>
+	<MSG_TEXTEDITOR_DEST_EXIST>'%s' existiert bereits.</MSG_TEXTEDITOR_DEST_EXIST>
+	<MSG_LOADING>Lade...</MSG_LOADING>
+	<MSG_COPY_CANCELED>Kopiervorgang wurde abgebrochen.</MSG_COPY_CANCELED>
+	<INVALID_PASSWORD>Ungültiges Passwort</INVALID_PASSWORD>
+	<MSG_INVALID_PASSWORD>Das eingegebene Passwort ist falsch!</MSG_INVALID_PASSWORD>
+	<MSG_MAX_INVALID_PASSWORD>Es wurde die maximale Anzahl an Falscheingaben des Passwortes erreicht.\nDie Xbox wird sich nun abschalten.</MSG_MAX_INVALID_PASSWORD>
+	<INVALID_PASSCODE>Ungültiger Passcode</INVALID_PASSCODE>
+	<MSG_INVALID_PASSCODE>Der eingegebene Passcode ist falsch!</MSG_INVALID_PASSCODE>
+	<MSG_MAX_INVALID_PASSCODE>Es wurde die maximale Anzahl an Falscheingaben des Passcodes erreicht.\nDie Xbox wird sich nun abschalten.</MSG_MAX_INVALID_PASSCODE>
+	<MSG_SHUTTING_DOWN>Abschalten wird eingeleitet.</MSG_SHUTTING_DOWN>
+	<MSG_DASHUPDATE_SUCCESS>Upgrade des Dashboards war erfolgreich.\nDie alte Version wurde in \n\t\"%s\" umbenannt.\nDrücke OK um einen Reboot duchzuführen.</MSG_DASHUPDATE_SUCCESS>
+	<MSG_DASHUPDATE_FAILED>Live Update fehlgeschlagen.\nDrücke OK um einen Reboot duchzuführen.</MSG_DASHUPDATE_FAILED>
+	<MSG_DASHUPDATE_CHECK>Überprüfe Update.\nBitte die XBox NICHT ausschalten.</MSG_DASHUPDATE_CHECK>
+	<MSG_DASHUPDATE_VALID>Update wurde bestätigt.\nDrücke OK um mit dem Upgrade fortzufahren.</MSG_DASHUPDATE_VALID>
+	<MSG_BAD_CONFIGFILE>Deine Konfigurationsdatei ist entweder fehlerhaft oder beschädigt.\nBitte überprüfe die config.xml um das Problem zu beheben.\n Du kannst diese Warnung ruhigen Gewissens ignorieren und neu boote um die Änderungen vorzunehmen.</MSG_BAD_CONFIGFILE>
+	<MSG_BAD_SKINFILE>Das von dir verwendete Skin läuft nicht einwandfrei.\nBitte überarbeite und wechsele dein Skin um das Problem zu beheben.</MSG_BAD_SKINFILE>
+	<MSG_NEWHARDDISK>UnleashX hat eine neue Festplatte gefunden.\nSoll die neue Festplatte formatiert werden?\n\nDrücke beide Trigger und Start um fortzufahren...</MSG_NEWHARDDISK>
+	<MSG_NEWHD_WARNING>ACHTUNG!!!\nALLE DATEN AUF NON-REMOVABLE DISK GEHEN DABEI VERLOREN.\n\nDrücke beide Trigger und Start um fortzufahren...</MSG_NEWHD_WARNING>
+	<MSG_NEWHD_FINISHED>UnleashX hat die Vorbereitung der neuen Festplatte abgeschlossen.\n\nDrücke beide Trigger und Start um fortzufahren...</MSG_NEWHD_FINISHED>
+	<MSG_SETTING_SAVE_ERROR>Speichern der Einstellungen nicht möglich. Fehler Code: %d</MSG_SETTING_SAVE_ERROR>
+	<MSG_SETTING_FAILED>Musiklautstärke konnte nicht eingestellt werden. Fehler Code: %d</MSG_SETTING_FAILED>
+	<MSG_SETTING_RESTART>Die XBox muss neu gestartet werden, damit die Änderungen wirksam werden.</MSG_SETTING_RESTART>
+	<MSG_SETTING_SUCCESS>Einstellungen erfolgreich gespeichert..</MSG_SETTING_SUCCESS>
+	<MSG_SETTING_NOCONFIG>Kritischer Fehler. Konnte keine Konfiguration aus der config.xml laden.</MSG_SETTING_NOCONFIG>
+	<MSG_ASK_SAVE>Die Einstellungen wurden ge㭤ert.\nWenn du beendest, gehen die Änderungen verloren.\n\nMöchtest du die Änderungen speichern?</MSG_ASK_SAVE>
+	<!-- Control Panel-->
+	<AUTOLAUNCH>AutoStart</AUTOLAUNCH>
+	<DATETIME>Datum und Uhrzeit</DATETIME>
+	<SHORTCUT>Gamepad/IR Shortcut</SHORTCUT>
+	<LIVEUPDATE>Live Update</LIVEUPDATE>
+	<NETWORK>Netzwerk</NETWORK>
+	<SCRCALIBRATION>Bildschirmeinstellungen</SCRCALIBRATION>
+	<MUSIC>Sound und Audio</MUSIC>
+	<STORAGE>Speicher</STORAGE>
+	<SYSTEM>System</SYSTEM>
+	<DISPLAY>Video Darstellung</DISPLAY>
+	<AUTOLAUNCH_GAME>AutoStart Spiele</AUTOLAUNCH_GAME>
+	<AUTOLAUNCH_DVD>AutoStart DVD</AUTOLAUNCH_DVD>
+	<DVD_PLAYER>DVD Player</DVD_PLAYER>
+	<AUTOLAUNCH_AUDIO>AutoStart Audio</AUTOLAUNCH_AUDIO>
+	<CDAUDIO_PLAYER>CDAudio Player</CDAUDIO_PLAYER>
+	<AUTOLAUNCH_DATA>AutoStart Data</AUTOLAUNCH_DATA>
+	<FILE_MANAGER>File Manager</FILE_MANAGER>
+	<GAMEPAD>Game Pad</GAMEPAD>
+	<INFRARED_RCONTROL>Infrarot Fernbedienung</INFRARED_RCONTROL>
+	<AUTO_CHECK>Auto-Check</AUTO_CHECK>
+	<CHECK_UPDATE>Check Update</CHECK_UPDATE>
+	<SERVER>Server</SERVER>
+	<ENABLE>Aktivieren</ENABLE>
+	<CLOCK_SETTINGS>Zeit Einstellungen</CLOCK_SETTINGS>
+	<AUTOSET_CLOCK>Zeit automatisch einstellen</AUTOSET_CLOCK>
+	<SNTP_SERVER>SNTP Server</SNTP_SERVER>
+	<PORT>Port</PORT>
+	<ALLOW_HTTP>Erlaube HTTP</ALLOW_HTTP>
+	<FORMAT>Format</FORMAT>
+	<ENABLE_480P>Aktiviere 480p</ENABLE_480P>
+	<ENABLE_720P>Aktiviere 720p</ENABLE_720P>
+	<ENABLE_1080I>Aktiviere 1080i</ENABLE_1080I>
+	<ENABLE_PAL60>Aktiviere PAL-60</ENABLE_PAL60>
+	<FASTER_REFRESH_RATE>höhere Bildwiederholfrequenz</FASTER_REFRESH_RATE>
+	<TEST>Test</TEST>
+	<QUALITY>Qualität</QUALITY>
+	<COLOR>Farbe</COLOR>
+	<SOFTEN>Weichzeichnen</SOFTEN>
+	<FILTER_LEVEL>Filter Level</FILTER_LEVEL>
+	<AUTO_SWITCH>Auto Switch</AUTO_SWITCH>
+	<MULTI_REGION_MODE>Multi-Region Modus</MULTI_REGION_MODE>
+	<FORCE_PAL60>Erzwinge PAL60</FORCE_PAL60>
+	<ENABLE_DRIVE_F>Aktiviere Laufwerk F</ENABLE_DRIVE_F>
+	<ENABLE_DRIVE_G>Aktiviere Laufwerk G</ENABLE_DRIVE_G>
+	<HARD_DRIVE_INFO>Festplatten Info</HARD_DRIVE_INFO>
+	<MODEL>Model</MODEL>
+	<SERIAL_NO>Serien Nr.</SERIAL_NO>
+	<STATUS>Status</STATUS>
+	<DVD_DRIVE_INFO>DVD Info</DVD_DRIVE_INFO>
+	<DVD_DRIVE>DVD Laufwerk</DVD_DRIVE>
+	<CURRENT_IP>Aktuelle IP</CURRENT_IP>
+	<MAC_ADDRESS>MAC Adresse</MAC_ADDRESS>
+	<TYPE>Typ</TYPE>
+	<IP_ADDRESS>IP Adresse</IP_ADDRESS>
+	<SUBNET_MASK>Subnetzmaske</SUBNET_MASK>
+	<GATEWAY>Gateway</GATEWAY>
+	<FTP_SERVER>FTP Server</FTP_SERVER>
+	<USER>Benutzer</USER>
+	<PASSWORD>Passwort</PASSWORD>
+	<MAX_NO_USER>Max. Benutzeranzahl</MAX_NO_USER>
+	<ALLOW_ANON>Erlaube Anonymous-Anmeldung</ALLOW_ANON>
+	<MIN_PASV_PORT>Min. PASV Port</MIN_PASV_PORT>
+	<MAX_PASV_PORT>Max. PASV Port</MAX_PASV_PORT>
+	<SYST_NAME>SYST Name</SYST_NAME>
+	<BOOST_MODE>Boost Modus</BOOST_MODE>
+	<AUTO_DETECT>Auto-Erkennung</AUTO_DETECT>
+	<FTP_CLIENT>FTP Client</FTP_CLIENT>
+	<MIN_PORT>Min. Port</MIN_PORT>
+	<MAX_PORT>Max. Port</MAX_PORT>
+	<DETECT_PEERS>Erkenne Peers</DETECT_PEERS>
+	<HTTP_CONNECTION>HTTP Verbindung</HTTP_CONNECTION>
+	<ENABLE_PROXY>Aktiviere Proxy</ENABLE_PROXY>
+	<PROXY>Proxy</PROXY>
+	<PLAY_MUSIC>Musik abspielen</PLAY_MUSIC>
+	<RANDOM_MUSIC>Zufallswiedergabe</RANDOM_MUSIC>
+	<GLOBAL>Global</GLOBAL>
+	<MUSIC_PATH>Ablagepfad für Musik</MUSIC_PATH>
+	<SURROUND>Surround 5.1</SURROUND>
+	<MUSIC_VOLUME>Musik Lautstärke</MUSIC_VOLUME>
+	<SOUND>Sound</SOUND>
+	<SOUND_VOLUME>Sound Lautstärke</SOUND_VOLUME>
+	<SOUND_EFFECTS>Sound Effekte</SOUND_EFFECTS>
+	<XBOX_INFO>Xbox Info</XBOX_INFO>
+	<DASH_VERSION>Dash Version</DASH_VERSION>
+	<XBOX_NAME>Xbox Name</XBOX_NAME>
+	<FILE_OPERATION>Datei Operationen</FILE_OPERATION>
+	<AUTO_RENAME>Auto-Umbenennen</AUTO_RENAME>
+	<AUTO_PATCH_XBE>Auto-Patchen der XBE</AUTO_PATCH_XBE>
+	<ABORT_ON_ERROR>Abbruch bei Fehlern</ABORT_ON_ERROR>
+	<DEF_BACKUP_FOLDER>Backupverzeichnis</DEF_BACKUP_FOLDER>
+	<CONTEXT_MENU>Context Menu</CONTEXT_MENU>
+	<ALLOW_UNINSTALL>Erlaube Uninstall</ALLOW_UNINSTALL>
+	<ALLOW_MENU_EDIT>Erlaube Menu Edit</ALLOW_MENU_EDIT>
+	<ALLOW_RECENT_LIST>Erlaube zuletzt verwendet</ALLOW_RECENT_LIST>
+	<OPEN_GAME_FOLDER>Öffne Spielverszeichnis</OPEN_GAME_FOLDER>
+	<OPEN_SAVES_FOLDER>Öffne Speicherverzeichnis</OPEN_SAVES_FOLDER>
+	<FONT>Schriftart</FONT>
+	<FONT_SCALE>Schriftgröße</FONT_SCALE>
+	<SCROLL_SPEED>Scroll Geschwindigkeit</SCROLL_SPEED>
+	<TEMPERATURE>Temperatur</TEMPERATURE>
+	<MB_TEMP>Mainboard Temperatur</MB_TEMP>
+	<CPU_TEMP>CPU Temperatur</CPU_TEMP>
+	<USE_FAHRENHEIT>Benutze Fahrenheit</USE_FAHRENHEIT>
+	<TEMP_THRESHOLD>Temp. Grenzwert</TEMP_THRESHOLD>
+	<FAN_SPEED>Lüftergeschwindigkeit</FAN_SPEED>
+	<MISC>Sonstiges</MISC>
+	<LANGUAGE_FILE>Sprachdatei</LANGUAGE_FILE>
+	<LED_COLOR>LED Farbe</LED_COLOR>
+	<AUTO_TURN_OFF>Auto-Abschaltung (Min.)</AUTO_TURN_OFF>
+	<SCREEN_SAVER>Bildschirmschoner</SCREEN_SAVER>
+	<SS_WAIT>Wartezeit</SS_WAIT>
+	<SS_TEXT>Bildschirmschonertext</SS_TEXT>
+	<SS_VIDEO>Video Dateien</SS_VIDEO>
+	<SS_PATH>Ablagepfad für Slideshows</SS_PATH>
+	<ENABLE_BGM>Aktiviere BGM</ENABLE_BGM>
+	<SKIN>Skin</SKIN>
+	<SKINS_PATH>Ablagepfad für Skins</SKINS_PATH>
+	<CURRENT_SKIN>Aktuelles Skin</CURRENT_SKIN>
+	<RSS_NEWSFEED>RSS Newsfeed</RSS_NEWSFEED>
+	<INTERVAL>Intervall (Sek.)</INTERVAL>
+	<SAVE>Speichern</SAVE>
+	<RESET>Zurücksetzen</RESET>
+	<EXIT>Beenden</EXIT>
+	<!-- Audio Player-->
+	<STR_AUDIO_OPTIONS>Audio Einstellungen</STR_AUDIO_OPTIONS>
+	<STR_AUDIO_PLAYDISC>Disc abspielen</STR_AUDIO_PLAYDISC>
+	<STR_AUDIO_MANAGETRACKS>Tracks verwalten</STR_AUDIO_MANAGETRACKS>
+	<STR_AUDIO_OPENFILE>Datei öffnen...</STR_AUDIO_OPENFILE>
+	<STR_AUDIO_OPENPLAYLIST>Playlist öffnen</STR_AUDIO_OPENPLAYLIST>
+	<STR_AUDIO_SELECTOPTION>Audio Track auswählen</STR_AUDIO_SELECTOPTION>
+	<STR_AUDIO_CD>Audio CD</STR_AUDIO_CD>
+	<STR_AUDIO_PLAY>Abspielen</STR_AUDIO_PLAY>
+	<STR_EDIT>Bearbeiten</STR_EDIT>
+	<STR_MOVE_UP>Nach oben</STR_MOVE_UP>
+	<STR_MOVE_DOWN>Nach unten</STR_MOVE_DOWN>
+	<STR_AUDIO_NEWTRACK>Neuer Soundtrack...</STR_AUDIO_NEWTRACK>
+	<STR_MSG_DELETEST_ASK>Willst du wirklich '%s' löschen?</STR_MSG_DELETEST_ASK>
+</Resource>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- XGekoX MAINtenance Video Selector UnleashX Skin -->
+<!-- Made by: XGekoX -->
+<!-- Last update: 31. Aug. 2023 -->
+<Skin name="MAIN-VSI">
+
+<!-- General Information -->
+	<Information>
+		<Author>XGekoX</Author>
+		<Copyright>No Copyright</Copyright>
+		<ScreenSize Width="1280" Height="720" />
+		<Version>1.0</Version>
+	</Information>
+
+<!-- Intro Video -->
+    <IntroMovie>Boot.xmv</IntroMovie>
+	
+<!-- Custom File Explorer Background (PNG/JPG) Note: It's just a grafic that will get overlay on the main menu so don't use clear png art here or the BG will shine through. -->
+	<Filemanager SafeBorder="True">
+		<Background>filemanager.jpg</Background>
+	</Filemanager>
+
+<!-- Custom Loading Screen (PNG/JPG) - ShowInfo="False" : Shows No XBE Titel Info / ShowInfo="True" : Shows XBE Titel Info (Set to false for custom loading screen!) -->
+	<LoadingScreen ShowInfo="False">
+		<Background>loading.jpg</Background>
+	</LoadingScreen>
+
+<!-- Main -->
+
+    <!-- Globe Options -->
+	<Main Globe="True" Orb="False" Fog="True">
+	
+	<!-- Main Background (PNG/JPG) -->
+	<Background EnableAudio="True">menu.jpg</Background>
+		
+	<!-- Info Menu Font -->	
+	<InfoFont>common-font12.xpr</InfoFont>
+	
+	<!-- Info Menu Right Bottom - 20px distance between all the lines  -->
+		<Text Top="122" Left="385" Width="260" Scroll="0" Color="0xFFFFFFFF" Source="Version" Align="Left"/>	
+		<Text Top="140" Left="385" Width="260" Scroll="0" Color="0xFFFFFFFF" Source="Video: $VideoMode$" Align="Left"/>
+		<Text Top="158" Left="385" Width= 260" Scroll="0" Color="0xFFFFFFFF" Source="IP" Align="Left"/>
+		<Text Top="182" Left="385" Width="260" Scroll="0" Color="0xFFFFFFFF" Source="HDDStatus" Align="Left"/>
+		<Text Top="200" Left="385" Width="260" Scroll="0" Color="0xFFFFFFFF" Source="C_FreeMB" Align="Left"/>
+		<Text Top="218" Left="385" Width="260" Scroll="0" Color="0xFFFFFFFF" Source="E_FreeMB" Align="Left"/>
+		<Text Top="236" Left="385" Width="260" Scroll="0" Color="0xFFFFFFFF" Source="F_FreeMB" Align="Left"/>
+		<Text Top="254" Left="385" Width="260" Scroll="0" Color="0xFFFFFFFF" Source="G_FreeMB" Align="Left"/>
+		<Text Top="278" Left="385" Width="260" Scroll="0" Color="0xFFFFFFFF" Source="CPUTempC" Align="Left"/>
+		<Text Top="294" Left="385" Width="260" Scroll="0" Color="0xFFFFFFFF" Source="MBTempC" Align="Left"/>
+		
+		<!-- Preview Video "GamePreview" wmv or xmv - (See Preview Video Below) -->
+		<Image Source="GamePreview" />
+		
+		
+		<!-- Game Icon (Size and Position) - Config.xml Example: Icon="D:\Skin\Overlays\bioschecker.png" -->
+		<Image Top="320" Left="387" Width="116" Height="85" Source="GameIcon"/>
+		
+		<!-- Main Menu (Size and Position) (ShowIcon should mostly be set to false) -->
+		<Menu Scroll="True" Align="Left" ShowIcon="False">
+		<Position Top="130" Left="71" Width="300" Height="283" Fixed="False" FixAt="0" MaxItem="12"/>
+		
+		<!-- Preview Video "GamePreview" - Config.xml Example: Preview="D:\Skins\Video\preview.wmv") -->
+		<Preview EnableAudio="False" Top="320" left="387" Width="116" Height="85" Align="left" />
+		
+		<!-- Main Menu Font -->
+		<Font>common-font12.xpr</Font>
+		</Menu>
+		
+		<!-- Color Settings -->
+		<ColorScheme>
+			<CAPTION_TEXTCOLOR>0xff78BE00</CAPTION_TEXTCOLOR>
+			<CAPTION_BACKCOLOR>0xff565656</CAPTION_BACKCOLOR>
+			<DIALOG_BORDERCOLOR>0xff000000</DIALOG_BORDERCOLOR>
+			<DIALOG_BACKCOLOR>0xff565656</DIALOG_BACKCOLOR>
+			<DIALOG_INNER_BORDERCOLOR>0xff3a3a46</DIALOG_INNER_BORDERCOLOR>
+			<DIALOG_INNER_BACKCOLOR>0xff808080</DIALOG_INNER_BACKCOLOR>
+			<DIALOG_TEXTCOLOR>0xfff9f9f9</DIALOG_TEXTCOLOR>
+			<DIALOG_DISABLEDTEXT>0xff565656</DIALOG_DISABLEDTEXT>
+			<OPTION_TEXTCOLOR>0xffffffff</OPTION_TEXTCOLOR>
+			<OPTION_ACTIVETEXTCOLOR>0xff78BE00</OPTION_ACTIVETEXTCOLOR>
+			<OPTION_ACTIVEBACKCOLOR>0xff565656</OPTION_ACTIVEBACKCOLOR>
+			<BUTTON_BORDERCOLOR>0xff3a3a46</BUTTON_BORDERCOLOR>
+			<BUTTON_TEXTCOLOR>0xff565656</BUTTON_TEXTCOLOR>
+			<BUTTON_BACKCOLOR>0xff565656</BUTTON_BACKCOLOR>
+			<BUTTON_ACTIVETEXTCOLOR>0xff000000</BUTTON_ACTIVETEXTCOLOR>
+			<BUTTON_ACTIVEBACKCOLOR>0xff808080</BUTTON_ACTIVEBACKCOLOR>
+			<KB_KEYBG_HIGHLIGHT>0xff565656</KB_KEYBG_HIGHLIGHT>
+			<KB_KEYBG_DISABLED>0xff565656</KB_KEYBG_DISABLED>
+			<KB_KEY_PRESSED>0xff565656</KB_KEY_PRESSED>
+			<KB_KEY_NORMAL>0xff565656</KB_KEY_NORMAL>
+			<KB_KEY_DISABLED>0xff565656</KB_KEY_DISABLED>
+			<KB_KEY_ACTIVEBORDER>0xff78BE00</KB_KEY_ACTIVEBORDER>
+			<KB_KEY_TEXTCOLOR>0xff565656</KB_KEY_TEXTCOLOR>
+			<KB_KEY_TEXTBACKCOLOR>0xff808080</KB_KEY_TEXTBACKCOLOR>
+			<KB_KEY_TEXTBORDERCOLOR>0xff78BE00</KB_KEY_TEXTBORDERCOLOR>
+			<MENU_TEXTCOLOR>0xffffffff</MENU_TEXTCOLOR>
+			<MENU_ACTIVETEXTCOLOR>0xff78BE00</MENU_ACTIVETEXTCOLOR>
+			<MENU_BORDERCOLOR>0x00000000</MENU_BORDERCOLOR>
+			<MENU_BACKCOLOR>0x00000000</MENU_BACKCOLOR>
+			<MENU_ACTIVEBACKCOLOR>0x00000000</MENU_ACTIVEBACKCOLOR>
+			<MENU_ACTIVEBORDERCOLOR>0x00000000</MENU_ACTIVEBORDERCOLOR>
+		</ColorScheme>
+	</Main>
+</Skin>

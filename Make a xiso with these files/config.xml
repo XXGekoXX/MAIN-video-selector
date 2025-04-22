@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UnleashX>
+	<Settings>
+		<MSDashBoard>C:\Xboxdash.xbe</MSDashBoard>
+		<Password MaxTries="3"></Password>
+		<Network Enable="Yes" Type="DHCP">
+			<IP>192.168.1.15</IP>
+			<Subnet>255.255.255.0</Subnet>
+			<Gateway>192.168.1.254</Gateway>
+			<DNS1>192.168.1.254</DNS1>
+			<DNS2>192.168.1.254</DNS2>
+			<AutoDetect>Yes</AutoDetect>
+		</Network>
+		<FTP Enable="Yes">
+			<User>xbox</User>
+			<Password>xbox</Password>
+			<Port>21</Port>
+			<MaxUsers>10</MaxUsers>
+			<AllowAnon>No</AllowAnon>
+			<Greeting>Benvenuto nel server FTP</Greeting>
+			<Boost>Yes</Boost>
+		</FTP>
+		<Preference>
+			<DVD AutoLaunch="No"/>
+			<AudioCD AutoLaunch="No"/>
+			<Data AutoLaunch="No">D:\default.xbe</Data>
+			<Games AutoLaunch="No">D:\default.xbe</Games>
+			<SNTP Synchronize="No">216.239.35.0</SNTP>
+			<UseFahrenheit>No</UseFahrenheit>
+			<FanSpeed>1.00</FanSpeed>
+			<TempThreshold>65</TempThreshold>
+			<Use24HFormat>Yes</Use24HFormat>
+			<ScreenSaver Wait="600" Type="1" EnableBGM="No">
+				<Text>MAINtenance video selector INSTALLER</Text>
+				<Video></Video>
+			</ScreenSaver>
+			<AutoTurnOff>0</AutoTurnOff>
+			<EnableDriveF>True</EnableDriveF>
+			<EnableDriveG>True</EnableDriveG>
+			<LEDColor>Red</LEDColor>
+			<ContextMenu AllowRecentList="No"></ContextMenu>
+			<Skin Path="Skin">MAIN_VSI</Skin>
+			<LiveUpdate AutoCheck="No"></LiveUpdate>
+			<VideoSettings Use480P="Yes" Use720P="Yes" Use1080I="No" Widescreen="Yes"></VideoSettings>
+			<AutoVideoMode MultiRegion="Off" UsePAL60="No">No</AutoVideoMode>
+			<AutoSetTime>Yes</AutoSetTime>
+		</Preference>
+		<Shortcut></Shortcut>
+				<Audio>
+			<EnableSoundEffect>Yes</EnableSoundEffect>
+			<SoundVolume>65</SoundVolume>
+			<Scroll>D:\skin\music\scroll_50.wav</Scroll>
+			<Select>D:\skin\music\click_200.wav</Select>
+			<Action_Complete>D:\skin\music\scroll_50.wav</Action_Complete>
+			<Keyboard_Stroke>D:\skin\music\scroll_50.wav</Keyboard_Stroke>
+			<Back>D:\skin\music\back_200.wav</Back>
+			<Menu_Up>D:\skin\music\scroll_50.wav</Menu_Up>
+			<Menu_Down>D:\skin\music\scroll_50.wav</Menu_Down>
+			<Game_Save_Select>D:\skin\music\scroll_50.wav</Game_Save_Select>
+			<Memory_Slot>D:\skin\music\scroll_50.wav</Memory_Slot>
+			<Ambient>D:\skin\music\ambient.wav</Ambient>
+		</Audio>
+		<LED>
+			<FTPReceive>Flashing Green</FTPReceive>
+		</LED>
+	</Settings>
+	<Menu>	
+ <List  Icon="D:\Icons\Ita.png" Text="-ITALIANO." Sort="Off" Auto="On">
+		<List  Icon="D:\Icons\Edited.png" Text="*Ho editato il file CERBIOS.INI" Sort="Off" Auto="On">
+		<List  Icon="D:\Icons\hdde.png" Text="Installa l'App in E:\Apps" Sort="Off" Batch="True">
+	        <Item Action="AskUser" Arg1="ATTENZIONE" Arg2="Questa opzione si rivolge a utenti esperti che hanno \ngià editato il loro file Cerbios.ini abilitando \nil video di avvio personalizzato. \nContinuo?"/>
+                 <Item Action="AskUser" Arg1="RICORDA" Arg2="Una volta installata l'applicazione, dal menù EXTRA \npotrai ripristinare la cartella originale delle \nanimazioni di avvio in qualsiasi momento. \nProcedo?"/>
+						<Item Action="copy" Arg1="D:\dummy" Arg2="E:\Apps\MAIN Video selector\dummy"/>	
+						<Item Action="Delete" arg="E:\Apps\MAIN Video selector"/>
+						<Item Action="copy" Arg1="D:\xml\EEappsITA.xml" Arg2="E:\Apps\MAIN Video selector\config.xml"/>
+						<Item Action="copy" Arg1="D:\languages\Italian.xml" Arg2="E:\Apps\MAIN video selector\Italian.xml"/>
+						<Item Action="unzip" Arg1="D:\Tool.zip" Arg2="E:\Apps\MAIN Video selector"/>
+						<Item Action="Format" arg1="Z"/>
+						<Item Action="E:\Apps\MAIN Video selector\Default.xbe"/>
+					</List>
+		<List  Icon="D:\Icons\hddf.png" Text="Installa l'App in F:\Apps" Sort="Off" Batch="True">
+	        <Item Action="AskUser" Arg1="ATTENZIONE" Arg2="Questa opzione si rivolge a utenti esperti che hanno \ngià editato il loro file Cerbios.ini abilitando \nil video di avvio personalizzato. \nContinuo?"/>
+                 <Item Action="AskUser" Arg1="RICORDA" Arg2="Una volta installata l'applicazione, dal menù EXTRA \npotrai ripristinare la cartella originale delle \nanimazioni di avvio in qualsiasi momento. \nProcedo?"/>
+						<Item Action="copy" Arg1="D:\dummy" Arg2="F:\Apps\MAIN Video selector\dummy"/>	
+						<Item Action="Delete" arg="F:\Apps\MAIN Video selector"/>
+						<Item Action="copy" Arg1="D:\xml\EEappsITA.xml" Arg2="E:\Apps\MAIN Video selector\config.xml"/>
+						<Item Action="copy" Arg1="D:\languages\Italian.xml" Arg2="F:\Apps\MAIN video selector\Italian.xml"/>
+						<Item Action="unzip" Arg1="D:\Tool.zip" Arg2="F:\Apps\MAIN Video selector"/>
+						<Item Action="Format" arg1="Z"/>
+						<Item Action="F:\Apps\MAIN Video selector\Default.xbe"/>
+					</List>
+		<List  Icon="D:\Icons\hddg.png" Text="Installa l'App in G:\Apps" Sort="Off" Batch="True">
+	        <Item Action="AskUser" Arg1="ATTENZIONE" Arg2="Questa opzione si rivolge a utenti esperti che hanno \ngià editato il loro file Cerbios.ini abilitando \nil video di avvio personalizzato. \nContinuo?"/>
+                 <Item Action="AskUser" Arg1="RICORDA" Arg2="Una volta installata l'applicazione, dal menù EXTRA \npotrai ripristinare la cartella originale delle \nanimazioni di avvio in qualsiasi momento. \nProcedo?"/>
+						<Item Action="copy" Arg1="D:\dummy" Arg2="G:\Apps\MAIN Video selector\dummy"/>	
+						<Item Action="Delete" arg="G:\Apps\MAIN Video selector"/>
+						<Item Action="copy" Arg1="D:\xml\EGappsITA.xml" Arg2="G:\Apps\MAIN Video selector\config.xml"/>
+						<Item Action="copy" Arg1="D:\languages\Italian.xml" Arg2="G:\Apps\MAIN video selector\Italian.xml"/>
+						<Item Action="unzip" Arg1="D:\Tool.zip" Arg2="G:\Apps\MAIN Video selector"/>
+						<Item Action="Format" arg1="Z"/>
+						<Item Action="G:\Apps\MAIN Video selector\Default.xbe"/>
+					</List>
+			<Item>EXTRA:</Item>				
+			<Item  Icon="D:\Icons\FileManager.png" Action="FileManager">-Gestione File.</Item>
+			<Item  Icon="D:\Icons\Reboot.png" Action="PowerCycle">-Riavvia.</Item>
+			<List  Icon="D:\Icons\Shutdown.png" Text="-Spegni e pulisci il Sistema." Sort="Off" Batch="True">
+				<Item Action="MessageBox" Arg1="Spegnimento">La XBox ora verrà spenta e le partizioni di cache saranno formattate.</Item>
+				<Item Action="Format" Arg1="X"/>
+				<Item Action="Format" Arg1="Y"/>
+				<Item Action="Format" Arg1="Z"/>
+				<Item Action="Shutdown"/>
+			</List>
+					</List>
+					<List  Icon="D:\Icons\NotEdited.png" Text="*NON ho editato il file CERBIOS.INI" Sort="Off" Auto="On">
+		<List  Icon="D:\Icons\hdde.png" Text="Installa l'App in E:\Apps" Sort="off" Batch="True">
+	        <Item Action="AskUser" Arg1="ATTENZIONE" Arg2="Questa opzione si rivolge a utenti che NON hanno \neditato il loro file Cerbios.ini abilitando il video \ndi avvio personalizzato. \nContinuo?"/>
+                 <Item Action="AskUser" Arg1="RICORDA" Arg2="Una volta installata l'applicazione, dal menù EXTRA \npotrai ripristinare la cartella originale delle \nanimazioni di avvio in qualsiasi momento. \nProcedo?"/>
+						<Item Action="copy" Arg1="D:\dummy" Arg2="E:\Apps\MAIN Video selector\dummy"/>	
+						<Item Action="Delete" arg="E:\Apps\MAIN Video selector"/>
+						<Item Action="copy" Arg1="D:\xml\NEEappsITA.xml" Arg2="E:\Apps\MAIN Video selector\config.xml"/>
+						<Item Action="copy" Arg1="D:\languages\Italian.xml" Arg2="E:\Apps\MAIN video selector\Italian.xml"/>
+						<Item Action="unzip" Arg1="D:\Tool.zip" Arg2="E:\Apps\MAIN Video selector"/>
+						<Item Action="Format" arg1="Z"/>
+						<Item Action="E:\Apps\MAIN Video selector\Default.xbe"/>
+					</List>
+		<List  Icon="D:\Icons\hddf.png" Text="Installa l'App in F:\Apps" Sort="off" Batch="True">
+	        <Item Action="AskUser" Arg1="ATTENZIONE" Arg2="Questa opzione si rivolge a utenti che NON hanno \neditato il loro file Cerbios.ini abilitando il video \ndi avvio personalizzato. \nContinuo?"/>
+                 <Item Action="AskUser" Arg1="RICORDA" Arg2="Una volta installata l'applicazione, dal menù EXTRA \npotrai ripristinare la cartella originale delle \nanimazioni di avvio in qualsiasi momento. \nProcedo?"/>
+						<Item Action="copy" Arg1="D:\dummy" Arg2="F:\Apps\MAIN Video selector\dummy"/>	
+						<Item Action="Delete" arg="F:\Apps\MAIN Video selector"/>
+						<Item Action="copy" Arg1="D:\xml\NEFappsITA.xml" Arg2="F:\Apps\MAIN Video selector\config.xml"/>
+						<Item Action="copy" Arg1="D:\languages\Italian.xml" Arg2="F:\Apps\MAIN video selector\Italian.xml"/>
+						<Item Action="unzip" Arg1="D:\Tool.zip" Arg2="F:\Apps\MAIN Video selector"/>
+						<Item Action="Format" arg1="Z"/>
+						<Item Action="F:\Apps\MAIN Video selector\Default.xbe"/>
+					</List>
+		<List  Icon="D:\Icons\hddg.png" Text="Installa l'App in G:\Apps" Sort="off" Batch="True">
+	        <Item Action="AskUser" Arg1="ATTENZIONE" Arg2="Questa opzione si rivolge a utenti che NON hanno \neditato il loro file Cerbios.ini abilitando il video \ndi avvio personalizzato. \nContinuo?"/>
+                 <Item Action="AskUser" Arg1="RICORDA" Arg2="Una volta installata l'applicazione, dal menù EXTRA \npotrai ripristinare la cartella originale delle \nanimazioni di avvio in qualsiasi momento. \nProcedo?"/>
+						<Item Action="copy" Arg1="D:\dummy" Arg2="G:\Apps\MAIN Video selector\dummy"/>	
+						<Item Action="Delete" arg="G:\Apps\MAIN Video selector"/>
+						<Item Action="copy" Arg1="D:\xml\NEGappsITA.xml" Arg2="G:\Apps\MAIN Video selector\config.xml"/>
+						<Item Action="copy" Arg1="D:\languages\Italian.xml" Arg2="G:\Apps\MAIN video selector\Italian.xml"/>
+						<Item Action="unzip" Arg1="D:\Tool.zip" Arg2="G:\Apps\MAIN Video selector"/>
+						<Item Action="Format" arg1="Z"/>
+						<Item Action="G:\Apps\MAIN Video selector\Default.xbe"/>
+					</List>
+ <Item>EXTRA:</Item>				
+			<Item  Icon="D:\Icons\FileManager.png" Action="FileManager">-Gestione File.</Item>
+			<Item  Icon="D:\Icons\reboot.png" Action="PowerCycle">-Riavvia.</Item>
+			<List  Icon="D:\Icons\Shutdown.png" Text="-Spegni e pulisci il Sistema." Sort="Off" Batch="True">
+				<Item Action="MessageBox" Arg1="Spegnimento">La XBox ora verrà spenta e le partizioni di cache saranno formattate.</Item>
+				<Item Action="Format" Arg1="X"/>
+				<Item Action="Format" Arg1="Y"/>
+				<Item Action="Format" Arg1="Z"/>
+				<Item Action="Shutdown"/>
+			</List>
+					</List>
+					</List>
+					<List  Icon="D:\Icons\Eng.png" Text="-ENGLISH." Sort="Off" Auto="On">
+		<List  Icon="D:\Icons\Edited.png" Text="*I edited the CERBIOS.INI file" Sort="Off" Auto="On">
+		<List  Icon="D:\Icons\hdde.png" Text="Install the App in E:\Apps" Sort="off" Batch="True">
+	        <Item Action="AskUser" Arg1="ATTENTION" Arg2="This option is for advanced users who have already \nedited their Cerbios.ini file by enabling the \ncustom boot video. \nContinue?"/>
+                 <Item Action="AskUser" Arg1="REMEMBER" Arg2="Once the application is installed, from the EXTRA menu \nyou can restore the original folder of the startup \nanimations at any time. \nShall I proceed?"/>
+						<Item Action="copy" Arg1="D:\dummy" Arg2="E:\Apps\MAIN Video selector\dummy"/>	
+						<Item Action="Delete" arg="E:\Apps\MAIN Video selector"/>
+						<Item Action="copy" Arg1="D:\xml\EEappsENG.xml" Arg2="E:\Apps\MAIN Video selector\config.xml"/>
+						<Item Action="copy" Arg1="D:\languages\English.xml" Arg2="E:\Apps\MAIN video selector\English.xml"/>
+						<Item Action="unzip" Arg1="D:\Tool.zip" Arg2="E:\Apps\MAIN Video selector"/>
+						<Item Action="Format" arg1="Z"/>
+						<Item Action="E:\Apps\MAIN Video selector\Default.xbe"/>
+					</List>
+		<List  Icon="D:\Icons\hddf.png" Text="Install the App in F:\Apps" Sort="off" Batch="True">
+	        <Item Action="AskUser" Arg1="ATTENTION" Arg2="This option is for advanced users who have already \nedited their Cerbios.ini file by enabling the \ncustom boot video. \nContinue?"/>
+                 <Item Action="AskUser" Arg1="REMEMBER" Arg2="Once the application is installed, from the EXTRA menu \nyou can restore the original folder of the startup \nanimations at any time. \nShall I proceed?"/>
+						<Item Action="copy" Arg1="D:\dummy" Arg2="F:\Apps\MAIN Video selector\dummy"/>	
+						<Item Action="Delete" arg="F:\Apps\MAIN Video selector"/>
+						<Item Action="copy" Arg1="D:\xml\EFappsENG.xml" Arg2="F:\Apps\MAIN Video selector\config.xml"/>
+						<Item Action="copy" Arg1="D:\languages\English.xml" Arg2="F:\Apps\MAIN video selector\English.xml"/>
+						<Item Action="unzip" Arg1="D:\Tool.zip" Arg2="F:\Apps\MAIN Video selector"/>
+						<Item Action="Format" arg1="Z"/>
+						<Item Action="F:\Apps\MAIN Video selector\Default.xbe"/>
+					</List>
+		<List  Icon="D:\Icons\hddg.png" Text="Install the App in G:\Apps" Sort="off" Batch="True">
+	        <Item Action="AskUser" Arg1="ATTENTION" Arg2="This option is for advanced users who have already \nedited their Cerbios.ini file by enabling the \ncustom boot video. \nContinue?"/>
+                 <Item Action="AskUser" Arg1="REMEMBER" Arg2="Once the application is installed, from the EXTRA menu \nyou can restore the original folder of the startup \nanimations at any time. \nShall I proceed?"/>
+						<Item Action="copy" Arg1="D:\dummy" Arg2="G:\Apps\MAIN Video selector\dummy"/>	
+						<Item Action="Delete" arg="G:\Apps\MAIN Video selector"/>
+						<Item Action="copy" Arg1="D:\xml\EGappsENG.xml" Arg2="G:\Apps\MAIN Video selector\config.xml"/>
+						<Item Action="copy" Arg1="D:\languages\English.xml" Arg2="G:\Apps\MAIN video selector\English.xml"/>
+						<Item Action="unzip" Arg1="D:\Tool.zip" Arg2="G:\Apps\MAIN Video selector"/>
+						<Item Action="Format" arg1="Z"/>
+						<Item Action="G:\Apps\MAIN Video selector\Default.xbe"/>
+					</List>
+
+ <Item>EXTRA:</Item>				
+			<Item  Icon="D:\Icons\FileManager.png" Action="FileManager">-File Manager.</Item>
+			<Item  Icon="D:\Icons\Shutdown.png" Action="PowerCycle">-Reboot.</Item>
+			<List Text="-Turn off and clean the system." Sort="Off" Batch="True">
+				<Item Action="MessageBox" Arg1="Shutdown">The XBox will now be turned off and the cache partitions \nwill be formatted.</Item>
+				<Item Action="Format" Arg1="X"/>
+				<Item Action="Format" Arg1="Y"/>
+				<Item Action="Format" Arg1="Z"/>
+				<Item Action="Shutdown"/>
+			</List>
+				</List>
+					<List  Icon="D:\Icons\NotEdited.png" Text="*I have NOT edited the file CERBIOS.INI" Sort="Off" Auto="On">
+		<List  Icon="D:\Icons\hdde.png" Text="Install the App in E:\Apps" Sort="Off" Batch="True">
+	        <Item Action="AskUser" Arg1="ATTENTION" Arg2="This option is intended for users who DID NOT edit their \nCerbios.ini file by enabling the custom boot video. \nContinue?"/>
+                 <Item Action="AskUser" Arg1="REMEMBER" Arg2="Once the application is installed, from the EXTRA menu \nyou can restore the original folder of the startup \nanimations at any time. \nShall I proceed?"/>
+						<Item Action="copy" Arg1="D:\dummy" Arg2="E:\Apps\MAIN Video selector\dummy"/>	
+						<Item Action="Delete" arg="E:\Apps\MAIN Video selector"/>
+						<Item Action="copy" Arg1="D:\xml\NEEappsENG.xml" Arg2="E:\Apps\MAIN Video selector\config.xml"/>
+						<Item Action="copy" Arg1="D:\languages\English.xml" Arg2="E:\Apps\MAIN video selector\English.xml"/>
+						<Item Action="unzip" Arg1="D:\Tool.zip" Arg2="E:\Apps\MAIN Video selector"/>
+						<Item Action="Format" arg1="Z"/>
+						<Item Action="E:\Apps\MAIN Video selector\Default.xbe"/>
+					</List>
+		<List  Icon="D:\Icons\hddf.png" Text="Install the App in F:\Apps" Sort="Off" Batch="True">
+	        <Item Action="AskUser" Arg1="ATTENTION" Arg2="This option is intended for users who DID NOT edit their \nCerbios.ini file by enabling the custom boot video. \nContinue?"/>
+                 <Item Action="AskUser" Arg1="REMEMBER" Arg2="Once the application is installed, from the EXTRA menu \nyou can restore the original folder of the startup \nanimations at any time. \nShall I proceed?"/>
+						<Item Action="copy" Arg1="D:\dummy" Arg2="F:\Apps\MAIN Video selector\dummy"/>	
+						<Item Action="Delete" arg="F:\Apps\MAIN Video selector"/>
+						<Item Action="copy" Arg1="D:\xml\NEFappsENG.xml" Arg2="F:\Apps\MAIN Video selector\config.xml"/>
+						<Item Action="copy" Arg1="D:\languages\English.xml" Arg2="F:\Apps\MAIN video selector\English.xml"/>
+						<Item Action="unzip" Arg1="D:\Tool.zip" Arg2="F:\Apps\MAIN Video selector"/>
+						<Item Action="Format" arg1="Z"/>
+						<Item Action="F:\Apps\MAIN Video selector\Default.xbe"/>
+					</List>
+		<List  Icon="D:\Icons\hddg.png" Text="Install the App in G:\Apps" Sort="Off" Batch="True">
+	        <Item Action="AskUser" Arg1="ATTENTION" Arg2="This option is intended for users who DID NOT edit their \nCerbios.ini file by enabling the custom boot video. \nContinue?"/>
+                 <Item Action="AskUser" Arg1="REMEMBER" Arg2="Once the application is installed, from the EXTRA menu \nyou can restore the original folder of the startup \nanimations at any time. \nShall I proceed?"/>
+						<Item Action="copy" Arg1="D:\dummy" Arg2="G:\Apps\MAIN Video selector\dummy"/>	
+						<Item Action="Delete" arg="G:\Apps\MAIN Video selector"/>
+						<Item Action="copy" Arg1="D:\xml\NEGappsENG.xml" Arg2="G:\Apps\MAIN Video selector\config.xml"/>
+						<Item Action="copy" Arg1="D:\languages\English.xml" Arg2="G:\Apps\MAIN video selector\English.xml"/>
+						<Item Action="unzip" Arg1="D:\Tool.zip" Arg2="G:\Apps\MAIN Video selector"/>
+						<Item Action="Format" arg1="Z"/>
+						<Item Action="G:\Apps\MAIN Video selector\Default.xbe"/>
+					</List>
+
+ <Item>EXTRA:</Item>				
+			<Item  Icon="D:\Icons\FileManager.png" Action="FileManager">-File Manager.</Item>
+			<Item  Icon="D:\Icons\Reboot.png" Action="PowerCycle">-Reboot.</Item>
+			<List   Icon="D:\Icons\Shutdown.png" Text="-Turn Off and clean the System." Sort="Off" Batch="True">
+				<Item Action="MessageBox" Arg1="Turn Off">The XBox will now be turned off and the cache partitions \nwill be formatted.</Item>
+				<Item Action="Format" Arg1="X"/>
+				<Item Action="Format" Arg1="Y"/>
+				<Item Action="Format" Arg1="Z"/>
+				<Item Action="Shutdown"/>
+			</List>
+					</List>
+						</List>
+					<List  Icon="D:\Icons\Esp.png" Text="-ESPAÑOL." Sort="Off" Auto="On">
+		<List  Icon="D:\Icons\Edited.png" Text="*He editado el archivo CERBIOS.INI" Sort="Off" Auto="On">
+		<List  Icon="D:\Icons\hdde.png" Text="Instala la aplicación en E:\Apps" Sort="Off" Batch="True">
+	        <Item Action="AskUser" Arg1="ATENCIÓN" Arg2="Esta opción está dirigida a usuarios avanzados que ya han \neditado su archivo Cerbios.ini habilitando el vídeo de \ninicio personalizado. \n¿Continuo?"/>
+                 <Item Action="AskUser" Arg1="RECUERDA" Arg2="Una vez instalada la aplicación, desde el menú EXTRA podrás \nrestaurar la carpeta original de las animaciones de inicio \nen cualquier momento. \n¿Quieres continuar?"/>
+						<Item Action="copy" Arg1="D:\dummy" Arg2="E:\Apps\MAIN Video selector\dummy"/>	
+						<Item Action="Delete" arg="E:\Apps\MAIN Video selector"/>
+						<Item Action="copy" Arg1="D:\xml\EEappsESP.xml" Arg2="E:\Apps\MAIN Video selector\config.xml"/>
+						<Item Action="copy" Arg1="D:\languages\Spanish.xml" Arg2="E:\Apps\MAIN video selector\Spanish.xml"/>
+						<Item Action="unzip" Arg1="D:\Tool.zip" Arg2="E:\Apps\MAIN Video selector"/>
+						<Item Action="Format" arg1="Z"/>
+						<Item Action="E:\Apps\MAIN Video selector\Default.xbe"/>
+					</List>
+		<List  Icon="D:\Icons\hddf.png" Text="Instala la aplicación en F:\Apps" Sort="Off" Batch="True">
+	        <Item Action="AskUser" Arg1="ATENCIÓN" Arg2="Esta opción está dirigida a usuarios avanzados que ya han \neditado su archivo Cerbios.ini habilitando el vídeo de \ninicio personalizado. \n¿Continuo?"/>
+                 <Item Action="AskUser" Arg1="RECUERDA" Arg2="Una vez instalada la aplicación, desde el menú EXTRA podrás \nrestaurar la carpeta original de las animaciones de inicio \nen cualquier momento. \n¿Quieres continuar?"/>
+						<Item Action="copy" Arg1="D:\dummy" Arg2="F:\Apps\MAIN Video selector\dummy"/>	
+						<Item Action="Delete" arg="F:\Apps\MAIN Video selector"/>
+						<Item Action="copy" Arg1="D:\xml\EFappsESP.xml" Arg2="F:\Apps\MAIN Video selector\config.xml"/>
+						<Item Action="copy" Arg1="D:\languages\Spanish.xml" Arg2="F:\Apps\MAIN video selector\Spanish.xml"/>
+						<Item Action="unzip" Arg1="D:\Tool.zip" Arg2="F:\Apps\MAIN Video selector"/>
+						<Item Action="Format" arg1="Z"/>
+						<Item Action="F:\Apps\MAIN Video selector\Default.xbe"/>
+					</List>
+		<List  Icon="D:\Icons\hddg.png" Text="Instala la aplicación en G:\Apps" Sort="Off" Batch="True">
+	        <Item Action="AskUser" Arg1="ATENCIÓN" Arg2="Esta opción está dirigida a usuarios avanzados que ya han \neditado su archivo Cerbios.ini habilitando el vídeo de \ninicio personalizado. \n¿Continuo?"/>
+                 <Item Action="AskUser" Arg1="RECUERDA" Arg2="Una vez instalada la aplicación, desde el menú EXTRA podrás \nrestaurar la carpeta original de las animaciones de inicio \nen cualquier momento. \n¿Quieres continuar?"/>
+						<Item Action="copy" Arg1="D:\dummy" Arg2="G:\Apps\MAIN Video selector\dummy"/>	
+						<Item Action="Delete" arg="G:\Apps\MAIN Video selector"/>
+						<Item Action="copy" Arg1="D:\xml\EGappsESP.xml" Arg2="G:\Apps\MAIN Video selector\config.xml"/>
+						<Item Action="copy" Arg1="D:\languages\Spanish.xml" Arg2="G:\Apps\MAIN video selector\Spanish.xml"/>
+						<Item Action="unzip" Arg1="D:\Tool.zip" Arg2="G:\Apps\MAIN Video selector"/>
+						<Item Action="Format" arg1="Z"/>
+						<Item Action="G:\Apps\MAIN Video selector\Default.xbe"/>
+					</List>
+
+		<Item>EXTRA:</Item>	
+			<Item  Icon="D:\Icons\FileManager.png" Action="FileManager">-Gestor de Archivos.</Item>
+			<Item  Icon="D:\Icons\Reboot.png" Action="PowerCycle">-Reinicia.</Item>
+			<List  Icon="D:\Icons\Shutdown.png" Text="-Apaga y limpia el Sistema." Sort="Off" Batch="True">
+				<Item Action="MessageBox" Arg1="Apagado">La XBox ahora se apagará y las particiones de caché serán \nformateadas.</Item>
+				<Item Action="Format" Arg1="X"/>
+				<Item Action="Format" Arg1="Y"/>
+				<Item Action="Format" Arg1="Z"/>
+				<Item Action="Shutdown"/>
+			</List>
+				</List>
+					<List  Icon="D:\Icons\NotEdited.png" Text="*NO he editado el archivo CERBIOS.INI" Sort="Off" Auto="On">
+		<List  Icon="D:\Icons\hdde.png" Text="Instala la aplicación en E:\Apps" Sort="Off" Batch="True">
+	        <Item Action="AskUser" Arg1="ATENCIÓN" Arg2="Esta opción está dirigida a usuarios avanzados que NO han \neditado su archivo Cerbios.ini habilitando el vídeo de \ninicio personalizado. \n¿Continuar?"/>
+                 <Item Action="AskUser" Arg1="RECUERDA" Arg2="Una vez instalada la aplicación, desde el menú EXTRA podrás \nrestaurar la carpeta original de las animaciones de inicio \nen cualquier momento. \n¿Quieres continuar?"/>
+						<Item Action="copy" Arg1="D:\dummy" Arg2="E:\Apps\MAIN Video selector\dummy"/>	
+						<Item Action="Delete" arg="E:\Apps\MAIN Video selector"/>
+						<Item Action="copy" Arg1="D:\xml\NEEappsESP.xml" Arg2="E:\Apps\MAIN Video selector\config.xml"/>
+						<Item Action="copy" Arg1="D:\languages\Spanish.xml" Arg2="E:\Apps\MAIN video selector\Spanish.xml"/>
+						<Item Action="unzip" Arg1="D:\Tool.zip" Arg2="E:\Apps\MAIN Video selector"/>
+						<Item Action="Format" arg1="Z"/>
+						<Item Action="E:\Apps\MAIN Video selector\Default.xbe"/>
+					</List>
+		<List  Icon="D:\Icons\hddf.png" Text="Instala la aplicación en F:\Apps" Sort="Off" Batch="True">
+	        <Item Action="AskUser" Arg1="ATENCIÓN" Arg2="Esta opción está dirigida a usuarios avanzados que NO han \neditado su archivo Cerbios.ini habilitando el vídeo de \ninicio personalizado. \n¿Continuar?"/>
+                 <Item Action="AskUser" Arg1="RECUERDA" Arg2="Una vez instalada la aplicación, desde el menú EXTRA podrás \nrestaurar la carpeta original de las animaciones de inicio \nen cualquier momento. \n¿Quieres continuar?"/>
+						<Item Action="copy" Arg1="D:\dummy" Arg2="F:\Apps\MAIN Video selector\dummy"/>	
+						<Item Action="Delete" arg="F:\Apps\MAIN Video selector"/>
+						<Item Action="copy" Arg1="D:\xml\NEFappsESP.xml" Arg2="F:\Apps\MAIN Video selector\config.xml"/>
+						<Item Action="copy" Arg1="D:\languages\Spanish.xml" Arg2="F:\Apps\MAIN video selector\Spanish.xml"/>
+						<Item Action="unzip" Arg1="D:\Tool.zip" Arg2="F:\Apps\MAIN Video selector"/>
+						<Item Action="Format" arg1="Z"/>
+						<Item Action="F:\Apps\MAIN Video selector\Default.xbe"/>
+					</List>
+		<List  Icon="D:\Icons\hddg.png" Text="Instala la aplicación en G:\Apps" Sort="Off" Batch="True">
+	        <Item Action="AskUser" Arg1="ATENCIÓN" Arg2="Esta opción está dirigida a usuarios avanzados que NO han \neditado su archivo Cerbios.ini habilitando el vídeo de \ninicio personalizado. \n¿Continuar?"/>
+                 <Item Action="AskUser" Arg1="RECUERDA" Arg2="Una vez instalada la aplicación, desde el menú EXTRA podrás \nrestaurar la carpeta original de las animaciones de inicio \nen cualquier momento. \n¿Quieres continuar?"/>
+						<Item Action="copy" Arg1="D:\dummy" Arg2="G:\Apps\MAIN Video selector\dummy"/>	
+						<Item Action="Delete" arg="G:\Apps\MAIN Video selector"/>
+						<Item Action="copy" Arg1="D:\xml\NEGappsESP.xml" Arg2="G:\Apps\MAIN Video selector\config.xml"/>
+						<Item Action="copy" Arg1="D:\languages\Spanish.xml" Arg2="G:\Apps\MAIN video selector\Spanish.xml"/>
+						<Item Action="unzip" Arg1="D:\Tool.zip" Arg2="G:\Apps\MAIN Video selector"/>
+						<Item Action="Format" arg1="Z"/>
+						<Item Action="G:\Apps\MAIN Video selector\Default.xbe"/>
+					</List>
+
+		<Item>EXTRA:</Item>	
+			<Item  Icon="D:\Icons\FileManager.png" Action="FileManager">-Gestor de Archivos.</Item>
+			<Item  Icon="D:\Icons\Reboot.png" Action="PowerCycle">-Reinicia.</Item>
+			<List  Icon="D:\Icons\Shutdown.png" Text="-Apaga y limpia el Sistema." Sort="Off" Batch="True">
+				<Item Action="MessageBox" Arg1="Apagado">La XBox ahora se apagará y las particiones de caché serán \nformateadas.</Item>
+				<Item Action="Format" Arg1="X"/>
+				<Item Action="Format" Arg1="Y"/>
+				<Item Action="Format" Arg1="Z"/>
+				<Item Action="Shutdown"/>
+			</List>
+				</List>
+					</List>
+<List  Icon="D:\Icons\Fra.png" Text="-FRANçAISE." Sort="Off" Auto="On">
+		<List  Icon="D:\Icons\Edited.png" Text="*J'ai édité le fichier CERBIOS.INI" Sort="Off" Auto="On">
+		<List  Icon="D:\Icons\hdde.png" Text="Installer l'App dans E:\Apps" Sort="off" Batch="True">
+	        <Item Action="AskUser" Arg1="ATTENTION" Arg2="Cette option est destinée aux utilisateurs avancés qui ont \ndéjà édité leur fichier Cerbios.ini en activant la vidéo de \ndémarrage personnalisée. \nContinuer?"/>
+                 <Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Une fois l'application installée, à partir du menu EXTRA vous \npouvez restaurer le dossier original des animations de démarrage \nen tout temps. \nDois-je procéder?"/>
+						<Item Action="copy" Arg1="D:\dummy" Arg2="E:\Apps\MAIN Video selector\dummy"/>	
+						<Item Action="Delete" arg="E:\Apps\MAIN Video selector"/>
+						<Item Action="copy" Arg1="D:\xml\EEappsFRA.xml" Arg2="E:\Apps\MAIN Video selector\config.xml"/>
+						<Item Action="copy" Arg1="D:\languages\French.xml" Arg2="E:\Apps\MAIN video selector\French.xml"/>
+						<Item Action="unzip" Arg1="D:\Tool.zip" Arg2="E:\Apps\MAIN Video selector"/>
+						<Item Action="Format" arg1="Z"/>
+						<Item Action="E:\Apps\MAIN Video selector\Default.xbe"/>
+					</List>
+		<List  Icon="D:\Icons\hddf.png" Text="Installer l'App dans F:\Apps" Sort="off" Batch="True">
+	        <Item Action="AskUser" Arg1="ATTENTION" Arg2="Cette option est destinée aux utilisateurs avancés qui ont \ndéjà édité leur fichier Cerbios.ini en activant la vidéo de \ndémarrage personnalisée. \nContinuer?"/>
+                 <Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Une fois l'application installée, à partir du menu EXTRA vous \npouvez restaurer le dossier original des animations de démarrage \nen tout temps. \nDois-je procéder?"/>
+						<Item Action="copy" Arg1="D:\dummy" Arg2="F:\Apps\MAIN Video selector\dummy"/>	
+						<Item Action="Delete" arg="F:\Apps\MAIN Video selector"/>
+						<Item Action="copy" Arg1="D:\xml\EFappsFRA.xml" Arg2="F:\Apps\MAIN Video selector\config.xml"/>
+						<Item Action="copy" Arg1="D:\languages\French.xml" Arg2="F:\Apps\MAIN video selector\French.xml"/>
+						<Item Action="unzip" Arg1="D:\Tool.zip" Arg2="F:\Apps\MAIN Video selector"/>
+						<Item Action="Format" arg1="Z"/>
+						<Item Action="F:\Apps\MAIN Video selector\Default.xbe"/>
+					</List>
+		<List  Icon="D:\Icons\hddg.png" Text="Installer l'App dans G:\Apps" Sort="off" Batch="True">
+	        <Item Action="AskUser" Arg1="ATTENTION" Arg2="Cette option est destinée aux utilisateurs avancés qui ont \ndéjà édité leur fichier Cerbios.ini en activant la vidéo de \ndémarrage personnalisée. \nContinuer?"/>
+                 <Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Une fois l'application installée, à partir du menu EXTRA vous \npouvez restaurer le dossier original des animations de démarrage \nen tout temps. \nDois-je procéder?"/>
+						<Item Action="copy" Arg1="D:\dummy" Arg2="G:\Apps\MAIN Video selector\dummy"/>	
+						<Item Action="Delete" arg="G:\Apps\MAIN Video selector"/>
+						<Item Action="copy" Arg1="D:\xml\EGappsFRA.xml" Arg2="G:\Apps\MAIN Video selector\config.xml"/>
+						<Item Action="copy" Arg1="D:\languages\French.xml" Arg2="G:\Apps\MAIN video selector\French.xml"/>
+						<Item Action="unzip" Arg1="D:\Tool.zip" Arg2="G:\Apps\MAIN Video selector"/>
+						<Item Action="Format" arg1="Z"/>
+						<Item Action="G:\Apps\MAIN Video selector\Default.xbe"/>
+					</List>
+
+ <Item>EXTRA:</Item>				
+			<Item  Icon="D:\Icons\FileManager.png" Action="Gestionnaire de Fichiers">-Gestione File.</Item>
+			<Item  Icon="D:\Icons\Reboot.png"  Action="PowerCycle">-Redémarrer.</Item>
+			<List  Icon="D:\Icons\Shutdown.png"  Text="-Éteignez et nettoyez le Système." Sort="Off" Batch="True">
+				<Item Action="MessageBox" Arg1="Arrêt">La XBox va maintenant être éteinte et les partitions de cache \nseront formatées.</Item>
+				<Item Action="Format" Arg1="X"/>
+				<Item Action="Format" Arg1="Y"/>
+				<Item Action="Format" Arg1="Z"/>
+				<Item Action="Shutdown"/>
+			</List>
+				</List>
+					<List  Icon="D:\Icons\NotEdited.png" Text="*Je n'ai PAS modifié le fichier CERBIOS.INI" Sort="Off" Auto="On">
+		<List  Icon="D:\Icons\hdde.png" Text="Installer l'App dans E:\Apps" Sort="Off" Batch="True">
+	        <Item Action="AskUser" Arg1="ATTENTION" Arg2="Cette option est destinée aux utilisateurs qui n'ont PAS \nmodifié nleur fichier Cerbios.ini en activant la vidéo de \ndémarrage personnalisée. \nContinuer?"/>
+                 <Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Une fois l'application installée, à partir du menu EXTRA vous \npouvez restaurer le dossier original des animations de démarrage \nen tout temps. \nDois-je procéder?"/>
+						<Item Action="copy" Arg1="D:\dummy" Arg2="E:\Apps\MAIN Video selector\dummy"/>	
+						<Item Action="Delete" arg="E:\Apps\MAIN Video selector"/>
+						<Item Action="copy" Arg1="D:\xml\NEEappsFRA.xml" Arg2="E:\Apps\MAIN Video selector\config.xml"/>
+						<Item Action="copy" Arg1="D:\languages\French.xml" Arg2="E:\Apps\MAIN video selector\French.xml"/>
+						<Item Action="unzip" Arg1="D:\Tool.zip" Arg2="E:\Apps\MAIN Video selector"/>
+						<Item Action="Format" arg1="Z"/>
+						<Item Action="E:\Apps\MAIN Video selector\Default.xbe"/>
+					</List>
+		<List  Icon="D:\Icons\hddf.png" Text="Installer l'App dans F:\Apps" Sort="Off" Batch="True">
+	        <Item Action="AskUser" Arg1="ATTENTION" Arg2="Cette option est destinée aux utilisateurs qui n'ont PAS \nmodifié nleur fichier Cerbios.ini en activant la vidéo de \ndémarrage personnalisée. \nContinuer?"/>
+                 <Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Une fois l'application installée, à partir du menu EXTRA vous \npouvez restaurer le dossier original des animations de démarrage \nen tout temps. \nDois-je procéder?"/>
+						<Item Action="copy" Arg1="D:\dummy" Arg2="F:\Apps\MAIN Video selector\dummy"/>	
+						<Item Action="Delete" arg="F:\Apps\MAIN Video selector"/>
+						<Item Action="copy" Arg1="D:\xml\NEFappsFRA.xml" Arg2="F:\Apps\MAIN Video selector\config.xml"/>
+						<Item Action="copy" Arg1="D:\languages\French.xml" Arg2="F:\Apps\MAIN video selector\French.xml"/>
+						<Item Action="unzip" Arg1="D:\Tool.zip" Arg2="F:\Apps\MAIN Video selector"/>
+						<Item Action="Format" arg1="Z"/>
+						<Item Action="F:\Apps\MAIN Video selector\Default.xbe"/>
+					</List>
+		<List  Icon="D:\Icons\hddg.png" Text="Installer l'App dans G:\Apps" Sort="Off" Batch="True">
+	        <Item Action="AskUser" Arg1="ATTENTION" Arg2="Cette option est destinée aux utilisateurs qui n'ont PAS \nmodifié nleur fichier Cerbios.ini en activant la vidéo de \ndémarrage personnalisée. \nContinuer?"/>
+                 <Item Action="AskUser" Arg1="SE RAPPELER" Arg2="Une fois l'application installée, à partir du menu EXTRA vous \npouvez restaurer le dossier original des animations de démarrage \nen tout temps. \nDois-je procéder?"/>
+						<Item Action="copy" Arg1="D:\dummy" Arg2="G:\Apps\MAIN Video selector\dummy"/>	
+						<Item Action="Delete" arg="G:\Apps\MAIN Video selector"/>
+						<Item Action="copy" Arg1="D:\xml\NEGappsFRA.xml" Arg2="G:\Apps\MAIN Video selector\config.xml"/>
+						<Item Action="copy" Arg1="D:\languages\French.xml" Arg2="G:\Apps\MAIN video selector\French.xml"/>
+						<Item Action="unzip" Arg1="D:\Tool.zip" Arg2="G:\Apps\MAIN Video selector"/>
+						<Item Action="Format" arg1="Z"/>
+						<Item Action="G:\Apps\MAIN Video selector\Default.xbe"/>
+					</List>
+
+ <Item>EXTRA:</Item>				
+			<Item  Icon="D:\Icons\FileManager.png" Action="FileManager">-Gestionnaire de Fichiers.</Item>
+			<Item  Icon="D:\Icons\Reboot.png"  Action="PowerCycle">-Redémarrer.</Item>
+			<List  Icon="D:\Icons\Shutdown.png"  Text="-Éteignez et nettoyez le Système." Sort="Off" Batch="True">
+				<Item Action="MessageBox" Arg1="Arrêt">La XBox va maintenant être éteinte et les partitions de cache \nseront formatées.</Item>
+				<Item Action="Format" Arg1="X"/>
+				<Item Action="Format" Arg1="Y"/>
+				<Item Action="Format" Arg1="Z"/>
+				<Item Action="Shutdown"/>
+			</List>
+					</List>
+						</List>
+					<List  Icon="D:\Icons\Deu.png" Text="-DEUTSCH." Sort="Off" Auto="On">
+		<List  Icon="D:\Icons\Edited.png" Text="*Ich habe die CERBIOS.INI-Datei bearbeitet" Sort="Off" Auto="On">
+		<List  Icon="D:\Icons\hdde.png" Text="App in E:\Apps installieren" Sort="Off" Batch="True">
+	        <Item Action="AskUser" Arg1="ACHTUNG" Arg2="Diese Option ist für fortgeschrittene Benutzer, die ihre \nCerbios.ini-Datei bereits bearbeitet haben, indem sie das \nbenutzerdefinierte Startvideo aktivieren. \nWeiter?"/>
+                 <Item Action="AskUser" Arg1="ERINNERN" Arg2="Sobald die Anwendung installiert ist, können Sie über das \nEXTRA-Menü jederzeit den ursprünglichen Ordner der \nStartanimationen wiederherstellen. \nSoll ich fortfahren?"/>
+						<Item Action="copy" Arg1="D:\dummy" Arg2="E:\Apps\MAIN Video selector\dummy"/>	
+						<Item Action="Delete" arg="E:\Apps\MAIN Video selector"/>
+						<Item Action="copy" Arg1="D:\xml\EEappsDEU.xml" Arg2="E:\Apps\MAIN Video selector\config.xml"/>
+						<Item Action="copy" Arg1="D:\languages\German.xml" Arg2="E:\Apps\MAIN video selector\German.xml"/>
+						<Item Action="unzip" Arg1="D:\Tool.zip" Arg2="E:\Apps\MAIN Video selector"/>
+						<Item Action="Format" arg1="Z"/>
+						<Item Action="E:\Apps\MAIN Video selector\Default.xbe"/>
+					</List>
+		<List  Icon="D:\Icons\hdde.png" Text="App in F:\Apps installieren" Sort="off" Batch="True">
+	        <Item Action="AskUser" Arg1="ACHTUNG" Arg2="Diese Option ist für fortgeschrittene Benutzer, die ihre \nCerbios.ini-Datei bereits bearbeitet haben, indem sie das \nbenutzerdefinierte Startvideo aktivieren. \nWeiter?"/>
+                 <Item Action="AskUser" Arg1="ERINNERN" Arg2="Sobald die Anwendung installiert ist, können Sie über das \nEXTRA-Menü jederzeit den ursprünglichen Ordner der \nStartanimationen wiederherstellen. \nSoll ich fortfahren?"/>
+						<Item Action="copy" Arg1="D:\dummy" Arg2="F:\Apps\MAIN Video selector\dummy"/>	
+						<Item Action="Delete" arg="F:\Apps\MAIN Video selector"/>
+						<Item Action="copy" Arg1="D:\xml\EFappsDEU.xml" Arg2="F:\Apps\MAIN Video selector\config.xml"/>
+						<Item Action="copy" Arg1="D:\languages\German.xml" Arg2="F:\Apps\MAIN video selector\German.xml"/>
+						<Item Action="unzip" Arg1="D:\Tool.zip" Arg2="F:\Apps\MAIN Video selector"/>
+						<Item Action="Format" arg1="Z"/>
+						<Item Action="F:\Apps\MAIN Video selector\Default.xbe"/>
+					</List>
+		<List  Icon="D:\Icons\hdde.png" Text="App in G:\Apps installieren" Sort="off" Batch="True">
+	        <Item Action="AskUser" Arg1="ACHTUNG" Arg2="Diese Option ist für fortgeschrittene Benutzer, die ihre \nCerbios.ini-Datei bereits bearbeitet haben, indem sie das \nbenutzerdefinierte Startvideo aktivieren. \nWeiter?"/>
+                 <Item Action="AskUser" Arg1="ERINNERN" Arg2="Sobald die Anwendung installiert ist, können Sie über das \nEXTRA-Menü jederzeit den ursprünglichen Ordner der \nStartanimationen wiederherstellen. \nSoll ich fortfahren?"/>
+						<Item Action="copy" Arg1="D:\dummy" Arg2="G:\Apps\MAIN Video selector\dummy"/>	
+						<Item Action="Delete" arg="G:\Apps\MAIN Video selector"/>
+						<Item Action="copy" Arg1="D:\xml\EGappsDEU.xml" Arg2="G:\Apps\MAIN Video selector\config.xml"/>
+						<Item Action="copy" Arg1="D:\languages\German.xml" Arg2="G:\Apps\MAIN video selector\German.xml"/>
+						<Item Action="unzip" Arg1="D:\Tool.zip" Arg2="G:\Apps\MAIN Video selector"/>
+						<Item Action="Format" arg1="Z"/>
+						<Item Action="G:\Apps\MAIN Video selector\Default.xbe"/>
+					</List>
+
+ <Item>EXTRA:</Item>				
+			<Item  Icon="D:\Icons\FileManager.png" Action="FileManager">-Datei-Manager.</Item>
+			<Item  Icon="D:\Icons\Reboot.png"  Action="PowerCycle">-Neustart.</Item>
+			<List  Icon="D:\Icons\Shutdown.png"  Text="-Ausschalten und Reinigen des Systems." Sort="Off" Batch="True">
+				<Item Action="MessageBox" Arg1="Ausschalten">Die XBox wird nun ausgeschaltet und die Cache-Partitionen \nwerden formatiert.</Item>
+				<Item Action="Format" Arg1="X"/>
+				<Item Action="Format" Arg1="Y"/>
+				<Item Action="Format" Arg1="Z"/>
+				<Item Action="Shutdown"/>
+			</List>
+				</List>
+					<List  Icon="D:\Icons\NotEdited.png" Text="*Ich habe die Datei CERBIOS.INI NICHT bearbeitet" Sort="Off" Auto="On">
+		<List  Icon="D:\Icons\hdde.png" Text="App in E:\Apps installieren" Sort="Off" Batch="True">
+	        <Item Action="AskUser" Arg1="ACHTUNG" Arg2="Diese Option ist für Benutzer gedacht, die ihre \nCerbios.ini-Datei NICHT bearbeitet haben, indem sie das \nbenutzerdefinierte Bootvideo aktiviert haben. \nWeiter?"/>
+                 <Item Action="AskUser" Arg1="ERINNERN" Arg2="Sobald die Anwendung installiert ist, können Sie über das \nEXTRA-Menü jederzeit den ursprünglichen Ordner der \nStartanimationen wiederherstellen. \nSoll ich fortfahren?"/>
+						<Item Action="copy" Arg1="D:\dummy" Arg2="E:\Apps\MAIN Video selector\dummy"/>	
+						<Item Action="Delete" arg="E:\Apps\MAIN Video selector"/>
+						<Item Action="copy" Arg1="D:\xml\NEEappsDEU.xml" Arg2="E:\Apps\MAIN Video selector\config.xml"/>
+						<Item Action="copy" Arg1="D:\languages\German.xml" Arg2="E:\Apps\MAIN video selector\German.xml"/>
+						<Item Action="unzip" Arg1="D:\Tool.zip" Arg2="E:\Apps\MAIN Video selector"/>
+						<Item Action="Format" arg1="Z"/>
+						<Item Action="E:\Apps\MAIN Video selector\Default.xbe"/>
+					</List>
+		<List  Icon="D:\Icons\hdde.png" Text="App in F:\Apps installieren" Sort="Off" Batch="True">
+	        <Item Action="AskUser" Arg1="ACHTUNG" Arg2="Diese Option ist für Benutzer gedacht, die ihre \nCerbios.ini-Datei NICHT bearbeitet haben, indem sie das \nbenutzerdefinierte Bootvideo aktiviert haben. \nWeiter?"/>
+                 <Item Action="AskUser" Arg1="ERINNERN" Arg2="Sobald die Anwendung installiert ist, können Sie über das \nEXTRA-Menü jederzeit den ursprünglichen Ordner der \nStartanimationen wiederherstellen. \nSoll ich fortfahren?"/>
+						<Item Action="copy" Arg1="D:\dummy" Arg2="F:\Apps\MAIN Video selector\dummy"/>	
+						<Item Action="Delete" arg="F:\Apps\MAIN Video selector"/>
+						<Item Action="copy" Arg1="D:\xml\NEFappsDEU.xml" Arg2="F:\Apps\MAIN Video selector\config.xml"/>
+						<Item Action="copy" Arg1="D:\languages\German.xml" Arg2="F:\Apps\MAIN video selector\German.xml"/>
+						<Item Action="unzip" Arg1="D:\Tool.zip" Arg2="F:\Apps\MAIN Video selector"/>
+						<Item Action="Format" arg1="Z"/>
+						<Item Action="F:\Apps\MAIN Video selector\Default.xbe"/>
+					</List>
+		<List  Icon="D:\Icons\hdde.png" Text="App in G:\Apps installieren" Sort="Off" Batch="True">
+	        <Item Action="AskUser" Arg1="ACHTUNG" Arg2="Diese Option ist für Benutzer gedacht, die ihre \nCerbios.ini-Datei NICHT bearbeitet haben, indem sie das \nbenutzerdefinierte Bootvideo aktiviert haben. \nWeiter?"/>
+                 <Item Action="AskUser" Arg1="ERINNERN" Arg2="Sobald die Anwendung installiert ist, können Sie über das \nEXTRA-Menü jederzeit den ursprünglichen Ordner der \nStartanimationen wiederherstellen. \nSoll ich fortfahren?"/>
+						<Item Action="copy" Arg1="D:\dummy" Arg2="G:\Apps\MAIN Video selector\dummy"/>	
+						<Item Action="Delete" arg="G:\Apps\MAIN Video selector"/>
+						<Item Action="copy" Arg1="D:\xml\NEGappsDEU.xml" Arg2="G:\Apps\MAIN Video selector\config.xml"/>
+						<Item Action="copy" Arg1="D:\languages\German.xml" Arg2="G:\Apps\MAIN video selector\German.xml"/>
+						<Item Action="unzip" Arg1="D:\Tool.zip" Arg2="G:\Apps\MAIN Video selector"/>
+						<Item Action="Format" arg1="Z"/>
+						<Item Action="G:\Apps\MAIN Video selector\Default.xbe"/>
+					</List>
+
+ <Item>EXTRA:</Item>				
+			<Item  Icon="D:\Icons\FileManager.png" Action="FileManager">-Datei-Manager.</Item>
+			<Item  Icon="D:\Icons\Reboot.png" Action="PowerCycle">-Neustart.</Item>
+			<List  Icon="D:\Icons\Shutdown.png"  Text="-Ausschalten und Reinigen des Systems." Sort="Off" Batch="True">
+				<Item Action="MessageBox" Arg1="Ausschalten">Die XBox wird nun ausgeschaltet und die Cache-Partitionen \nwerden formatiert.</Item>
+				<Item Action="Format" Arg1="X"/>
+				<Item Action="Format" Arg1="Y"/>
+				<Item Action="Format" Arg1="Z"/>
+				<Item Action="Shutdown"/>
+			</List>
+					</List>
+						</List>
+	</Menu>
+</UnleashX>
