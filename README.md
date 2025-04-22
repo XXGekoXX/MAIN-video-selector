@@ -6,3 +6,7 @@ the installer can be used in folder format or from dvd by burning the iso. the v
 
 It is possible to load custom videos by placing them in the Custom folder contained in the main directory of the program inside the Video path. 
 Custom videos must be named as "Video1", "Video2", "Video3", etc. up to 10
+
+here you can find a ready-to-install version: https://mega.nz/folder/Fw43EK6T#5aefTyT2JD4lvvKuMdsPrw
+
+
